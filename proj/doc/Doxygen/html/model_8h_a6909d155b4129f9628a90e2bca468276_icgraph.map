@@ -1,0 +1,8 @@
+<map id="load_new_word" name="load_new_word">
+<area shape="rect" id="node1" title="Loads new words to the test." alt="" coords="864,5,987,32"/>
+<area shape="rect" id="node2" href="$model_8h.html#a6fd340363e321476815273c4bb17b211" title="Moves the penultimate line to first line, last line to second and loads new words." alt="" coords="697,5,816,32"/>
+<area shape="rect" id="node3" href="$model_8h.html#abdb87c8ab72e44c6a3114d8734f475f0" title="Checks if the current word is correct and advances to the next word, also updates the statistics." alt="" coords="508,5,649,32"/>
+<area shape="rect" id="node4" href="$model_8c.html#affdaa1b5f5136664bd22e7799b7bc988" title=" " alt="" coords="325,5,460,32"/>
+<area shape="rect" id="node5" href="$model_8h.html#af4ac0fcf9c7cabe4beb4eac81d78b8b6" title="Handles the keyboard interrupts." alt="" coords="176,5,277,32"/>
+<area shape="rect" id="node6" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,5,128,32"/>
+</map>

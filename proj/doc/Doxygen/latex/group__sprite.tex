@@ -1,0 +1,174 @@
+\hypertarget{group__sprite}{}\doxysection{Sprite}
+\label{group__sprite}\index{Sprite@{Sprite}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSprite}{Sprite}}
+\begin{DoxyCompactList}\small\item\em Struct that represents a sprite. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structAnimation}{Animation}}
+\begin{DoxyCompactList}\small\item\em Struct that represents an animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga0558e4dc2054b924bf2cca2ba7b97a28}{create\+\_\+sprite\+\_\+xpm}} (xpm\+\_\+map\+\_\+t sprite, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Creates a sprite from an xpm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__sprite_ga607cfeb4f019a84c346eb3bce9da0420}{destroy\+\_\+sprite}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sprite)
+\begin{DoxyCompactList}\small\item\em Destroys a sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__sprite_ga7d2d72b3ea47dab6db0ada4b36017d7a}{Sprite\+::height}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__sprite_ga126fa60a3de74e112dc5fa7ab1809f37}{Sprite\+::width}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__sprite_ga7bf0b8881b843374906cf634fab4c29c}{Sprite\+::x}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__sprite_ga5f248b11506dc86738e196e6602d2a2a}{Sprite\+::y}}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{group__sprite_ga394114f3fce04459a1593a68166c8621}{Sprite\+::colors}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group__sprite_ga925050b598e308e3da33683aa2cb2aa7}{Sprite\+::color}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$$\ast$ \mbox{\hyperlink{group__sprite_ga7570fcdcdb1405e116102e58c4f8ca52}{Animation\+::frames}}
+\item 
+int \mbox{\hyperlink{group__sprite_gae0ad16be8ab1918d4452d354ca08d662}{Animation\+::frame\+Count}}
+\item 
+int \mbox{\hyperlink{group__sprite_gadc7df29e613689f29ddac3316b2a509d}{Animation\+::current\+Frame}}
+\item 
+bool \mbox{\hyperlink{group__sprite_ga5a11e3cc40528b3d19b08f0117b3be5c}{Animation\+::is\+Active}}
+\item 
+int \mbox{\hyperlink{group__sprite_ga8d2ce64f21291910a90efe1b60681977}{Animation\+::frame\+Duration}}
+\item 
+int \mbox{\hyperlink{group__sprite_ga5a49d4eedd5de33efd6b955b04d344fd}{Animation\+::frame\+Counter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions related to sprites and animations, visual representation of the items in the game 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__sprite_ga0558e4dc2054b924bf2cca2ba7b97a28}\label{group__sprite_ga0558e4dc2054b924bf2cca2ba7b97a28}} 
+\index{Sprite@{Sprite}!create\_sprite\_xpm@{create\_sprite\_xpm}}
+\index{create\_sprite\_xpm@{create\_sprite\_xpm}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{create\_sprite\_xpm()}{create\_sprite\_xpm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ create\+\_\+sprite\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{sprite,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Creates a sprite from an xpm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & the xpm of the sprite \\
+\hline
+{\em x} & the x position of the sprite \\
+\hline
+{\em y} & the y position of the sprite \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__sprite_ga0558e4dc2054b924bf2cca2ba7b97a28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__sprite_ga607cfeb4f019a84c346eb3bce9da0420}\label{group__sprite_ga607cfeb4f019a84c346eb3bce9da0420}} 
+\index{Sprite@{Sprite}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily void destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Destroys a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & the sprite to be destroyed \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__sprite_ga607cfeb4f019a84c346eb3bce9da0420_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__sprite_ga925050b598e308e3da33683aa2cb2aa7}\label{group__sprite_ga925050b598e308e3da33683aa2cb2aa7}} 
+\index{Sprite@{Sprite}!color@{color}}
+\index{color@{color}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily uint32\+\_\+t Sprite\+::color}
+
+\mbox{\Hypertarget{group__sprite_ga394114f3fce04459a1593a68166c8621}\label{group__sprite_ga394114f3fce04459a1593a68166c8621}} 
+\index{Sprite@{Sprite}!colors@{colors}}
+\index{colors@{colors}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ Sprite\+::colors}
+
+\mbox{\Hypertarget{group__sprite_gadc7df29e613689f29ddac3316b2a509d}\label{group__sprite_gadc7df29e613689f29ddac3316b2a509d}} 
+\index{Sprite@{Sprite}!currentFrame@{currentFrame}}
+\index{currentFrame@{currentFrame}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{currentFrame}{currentFrame}}
+{\footnotesize\ttfamily int Animation\+::current\+Frame}
+
+\mbox{\Hypertarget{group__sprite_gae0ad16be8ab1918d4452d354ca08d662}\label{group__sprite_gae0ad16be8ab1918d4452d354ca08d662}} 
+\index{Sprite@{Sprite}!frameCount@{frameCount}}
+\index{frameCount@{frameCount}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{frameCount}{frameCount}}
+{\footnotesize\ttfamily int Animation\+::frame\+Count}
+
+\mbox{\Hypertarget{group__sprite_ga5a49d4eedd5de33efd6b955b04d344fd}\label{group__sprite_ga5a49d4eedd5de33efd6b955b04d344fd}} 
+\index{Sprite@{Sprite}!frameCounter@{frameCounter}}
+\index{frameCounter@{frameCounter}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{frameCounter}{frameCounter}}
+{\footnotesize\ttfamily int Animation\+::frame\+Counter}
+
+\mbox{\Hypertarget{group__sprite_ga8d2ce64f21291910a90efe1b60681977}\label{group__sprite_ga8d2ce64f21291910a90efe1b60681977}} 
+\index{Sprite@{Sprite}!frameDuration@{frameDuration}}
+\index{frameDuration@{frameDuration}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{frameDuration}{frameDuration}}
+{\footnotesize\ttfamily int Animation\+::frame\+Duration}
+
+\mbox{\Hypertarget{group__sprite_ga7570fcdcdb1405e116102e58c4f8ca52}\label{group__sprite_ga7570fcdcdb1405e116102e58c4f8ca52}} 
+\index{Sprite@{Sprite}!frames@{frames}}
+\index{frames@{frames}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{frames}{frames}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$$\ast$ Animation\+::frames}
+
+\mbox{\Hypertarget{group__sprite_ga7d2d72b3ea47dab6db0ada4b36017d7a}\label{group__sprite_ga7d2d72b3ea47dab6db0ada4b36017d7a}} 
+\index{Sprite@{Sprite}!height@{height}}
+\index{height@{height}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily uint16\+\_\+t Sprite\+::height}
+
+\mbox{\Hypertarget{group__sprite_ga5a11e3cc40528b3d19b08f0117b3be5c}\label{group__sprite_ga5a11e3cc40528b3d19b08f0117b3be5c}} 
+\index{Sprite@{Sprite}!isActive@{isActive}}
+\index{isActive@{isActive}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{isActive}{isActive}}
+{\footnotesize\ttfamily bool Animation\+::is\+Active}
+
+\mbox{\Hypertarget{group__sprite_ga126fa60a3de74e112dc5fa7ab1809f37}\label{group__sprite_ga126fa60a3de74e112dc5fa7ab1809f37}} 
+\index{Sprite@{Sprite}!width@{width}}
+\index{width@{width}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily uint16\+\_\+t Sprite\+::width}
+
+\mbox{\Hypertarget{group__sprite_ga7bf0b8881b843374906cf634fab4c29c}\label{group__sprite_ga7bf0b8881b843374906cf634fab4c29c}} 
+\index{Sprite@{Sprite}!x@{x}}
+\index{x@{x}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily uint16\+\_\+t Sprite\+::x}
+
+\mbox{\Hypertarget{group__sprite_ga5f248b11506dc86738e196e6602d2a2a}\label{group__sprite_ga5f248b11506dc86738e196e6602d2a2a}} 
+\index{Sprite@{Sprite}!y@{y}}
+\index{y@{y}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily uint16\+\_\+t Sprite\+::y}
+

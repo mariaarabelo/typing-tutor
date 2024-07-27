@@ -1,0 +1,12 @@
+<map id="drawHighScores" name="drawHighScores">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,132,133"/>
+<area shape="rect" id="node2" href="$view_8c.html#a70ffe2ab8304eb2887213d7b3abadc0a" title="Draws the background of the game." alt="" coords="180,56,311,83"/>
+<area shape="rect" id="node5" href="$view_8c.html#a1c6ac852706c59fa3aeaa4b670f45dcb" title="Draws a static sprite on the screen." alt="" coords="200,107,291,133"/>
+<area shape="rect" id="node8" href="$view_8c.html#aebad560d35f86b4e398c824277f81105" title="Draws a text on the screen." alt="" coords="205,157,286,184"/>
+<area shape="rect" id="node3" href="$group__video.html#ga985c2ca86c8f87d6dbc5956e34f45faa" title=" " alt="" coords="359,5,481,32"/>
+<area shape="rect" id="node4" href="$group__rtc.html#ga13b766098356ee1c32b4348a999ca4b4" title=" " alt="" coords="364,56,476,83"/>
+<area shape="rect" id="node6" href="$view_8c.html#a9b73646129cbf750cc3c170aabe2ca6e" title="Draws a sprite on the screen, secondary_frame_buffer_no_mouse." alt="" coords="359,107,481,133"/>
+<area shape="rect" id="node7" href="$group__video.html#ga950e17209d152e8a40ec064a0b201b25" title=" " alt="" coords="529,107,621,133"/>
+<area shape="rect" id="node9" href="$model_8h.html#a884f66aebb13ef5e5e37ed3247d493e6" title="Gets a key based on a char." alt="" coords="370,157,470,184"/>
+<area shape="rect" id="node10" href="$model_8h.html#a2e5b5f1e5dd9806b0a18e19fccb7e850" title="Handles the offset for drawing." alt="" coords="363,208,477,235"/>
+</map>

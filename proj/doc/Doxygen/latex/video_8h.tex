@@ -1,0 +1,42 @@
+\hypertarget{video_8h}{}\doxysection{drivers/graphics/video.h File Reference}
+\label{video_8h}\index{drivers/graphics/video.h@{drivers/graphics/video.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}VBE.\+h\char`\"{}}\newline
+Include dependency graph for video.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{video_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{video_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__video_ga967432a6c8128a907b937b0f3f4b4472}{set\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t submode)
+\item 
+int() \mbox{\hyperlink{group__video_ga55bb0148c696baca125c2c03bd585ae5}{set\+\_\+frame\+\_\+buffer}} (uint16\+\_\+t mode)
+\item 
+int() \mbox{\hyperlink{group__video_ga950e17209d152e8a40ec064a0b201b25}{draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\item 
+int() \mbox{\hyperlink{group__video_gaaa521edac9abebe26567c6421b0480ab}{draw\+\_\+line}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\item 
+int() \mbox{\hyperlink{group__video_ga985c2ca86c8f87d6dbc5956e34f45faa}{draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{group__video_ga9fcc2243068f8e628648febc0909c509}{mode\+\_\+info}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{group__video_ga9c4d5f857a98e5753d9a1b65a5b237e8}{main\+\_\+frame\+\_\+buffer}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{group__video_gaa0b878733cd01083e20d9c85310285b7}{secondary\+\_\+frame\+\_\+buffer}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{group__video_ga81d4895cbb580af463bd443e5a75ce54}{secondary\+\_\+frame\+\_\+buffer\+\_\+no\+\_\+mouse}}
+\end{DoxyCompactItemize}

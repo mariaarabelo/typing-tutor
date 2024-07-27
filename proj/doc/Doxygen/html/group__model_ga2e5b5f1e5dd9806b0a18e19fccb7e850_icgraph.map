@@ -1,0 +1,8 @@
+<map id="offset_handler" name="offset_handler">
+<area shape="rect" id="node1" title="Handles the offset for drawing." alt="" coords="636,56,751,83"/>
+<area shape="rect" id="node2" href="$group__view.html#gaaa977327e5fe6a920fa0f39a4b6b1554" title="Draws a text on the screen." alt="" coords="507,56,588,83"/>
+<area shape="rect" id="node3" href="$group__view.html#ga1049e182be24f131adcb60be02ba8b6f" title=" " alt="" coords="332,5,459,32"/>
+<area shape="rect" id="node4" href="$group__view.html#ga19bb29bb8a74e2d753e25894de6051bd" title="Distributes the drawing of the game depending on the current state." alt="" coords="176,56,284,83"/>
+<area shape="rect" id="node6" href="$group__view.html#ga62cb81f95fe9af1dcad6423c8596df67" title="Displays the timers xpms on the screen." alt="" coords="346,107,445,133"/>
+<area shape="rect" id="node5" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,56,128,83"/>
+</map>

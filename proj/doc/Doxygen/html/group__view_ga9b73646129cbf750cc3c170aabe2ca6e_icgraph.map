@@ -1,0 +1,27 @@
+<map id="drawSpriteXPM" name="drawSpriteXPM">
+<area shape="rect" id="node1" title="Draws a sprite on the screen, secondary_frame_buffer_no_mouse." alt="" coords="1076,259,1197,285"/>
+<area shape="rect" id="node2" href="$group__view.html#gaef1add041cf19e5c307b57219a7c8b66" title="Draws a animation depending on current frame etc..." alt="" coords="893,5,1015,32"/>
+<area shape="rect" id="node3" href="$group__view.html#gae7431a7e0aa69b7650e6995f449a8511" title="Decides which animation to draw depending on their states." alt="" coords="681,56,832,83"/>
+<area shape="rect" id="node6" href="$group__view.html#ga03617d69c890839ae77389d5bcc2dde8" title="Draws the cursor on the screen." alt="" coords="709,107,805,133"/>
+<area shape="rect" id="node7" href="$group__view.html#gab56e77c696fe2d638df42dbbd4219796" title=" " alt="" coords="919,157,989,184"/>
+<area shape="rect" id="node9" href="$group__view.html#gafc0bfeb4dc7a37cdd20f3aade1a0403f" title="Draws the real&#45;time clock on the screen." alt="" coords="896,208,1012,235"/>
+<area shape="rect" id="node10" href="$group__view.html#ga32f41952ee7ca372ce9c1be8ed13f28f" title="Draws the record time on the screen." alt="" coords="880,259,1028,285"/>
+<area shape="rect" id="node11" href="$group__view.html#ga8467ec59b8b552637806ac1df1836aab" title="Draws the remaining stars on the screen." alt="" coords="911,309,997,336"/>
+<area shape="rect" id="node12" href="$group__view.html#ga1c6ac852706c59fa3aeaa4b670f45dcb" title="Draws a static sprite on the screen." alt="" coords="909,360,999,387"/>
+<area shape="rect" id="node14" href="$group__view.html#gaaa977327e5fe6a920fa0f39a4b6b1554" title="Draws a text on the screen." alt="" coords="913,423,995,449"/>
+<area shape="rect" id="node15" href="$group__view.html#ga62cb81f95fe9af1dcad6423c8596df67" title="Displays the timers xpms on the screen." alt="" coords="707,512,806,539"/>
+<area shape="rect" id="node16" href="$group__view.html#gadc5e6cc78a16311829dc821e0a85030b" title="Draws the game words on the screen." alt="" coords="907,639,1001,665"/>
+<area shape="rect" id="node4" href="$group__view.html#ga19bb29bb8a74e2d753e25894de6051bd" title="Distributes the drawing of the game depending on the current state." alt="" coords="512,335,620,361"/>
+<area shape="rect" id="node5" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,613,128,640"/>
+<area shape="rect" id="node8" href="$group__view.html#gac08e90ceaadc3869564f4dc490521337" title=" " alt="" coords="699,157,814,184"/>
+<area shape="rect" id="node13" href="$group__view.html#ga1049e182be24f131adcb60be02ba8b6f" title=" " alt="" coords="693,411,820,437"/>
+<area shape="rect" id="node17" href="$group__model.html#gad48d10ec2a1703d551dc554184cf24ca" title="Fills correctly the remaining letters of the current word." alt="" coords="691,613,822,640"/>
+<area shape="rect" id="node21" href="$group__model.html#gabf69e0a27419eda374e9be68a9a18436" title="Goes back to the previous letter and resets the current letter status." alt="" coords="685,664,829,691"/>
+<area shape="rect" id="node24" href="$group__model.html#gabdb87c8ab72e44c6a3114d8734f475f0" title="Checks if the current word is correct and advances to the next word, also updates the statistics." alt="" coords="686,715,827,741"/>
+<area shape="rect" id="node25" href="$group__model.html#gaee5607d98315faa768966764fc2f856c" title="Processes the key pressed, updating the letter status and the current input, and also the statistics." alt="" coords="705,765,808,792"/>
+<area shape="rect" id="node18" href="$group__model.html#gab928d80e53e1b9328939c6d548717c4d" title="Updates the swipe&#45;right gesture status." alt="" coords="511,613,621,640"/>
+<area shape="rect" id="node19" href="$group__model.html#ga863baa087fc06f01a6a564bd309505ce" title="Checks the actions to be taken based on the mouse data." alt="" coords="343,613,451,640"/>
+<area shape="rect" id="node20" href="$group__model.html#gab5fa7e7da1851578789c26ec9d71448b" title="Sync mouse bytes and calls update_mouse_date." alt="" coords="176,613,295,640"/>
+<area shape="rect" id="node22" href="$model_8c.html#affdaa1b5f5136664bd22e7799b7bc988" title=" " alt="" coords="499,708,633,735"/>
+<area shape="rect" id="node23" href="$group__model.html#gaf4ac0fcf9c7cabe4beb4eac81d78b8b6" title="Handles the keyboard interrupts." alt="" coords="185,676,286,703"/>
+</map>

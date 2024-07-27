@@ -1,0 +1,6 @@
+<map id="drawAnimation" name="drawAnimation">
+<area shape="rect" id="node1" title="Draws a animation depending on current frame etc..." alt="" coords="531,5,652,32"/>
+<area shape="rect" id="node2" href="$group__view.html#gae7431a7e0aa69b7650e6995f449a8511" title="Decides which animation to draw depending on their states." alt="" coords="332,5,483,32"/>
+<area shape="rect" id="node3" href="$group__view.html#ga19bb29bb8a74e2d753e25894de6051bd" title="Distributes the drawing of the game depending on the current state." alt="" coords="176,5,284,32"/>
+<area shape="rect" id="node4" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,5,128,32"/>
+</map>

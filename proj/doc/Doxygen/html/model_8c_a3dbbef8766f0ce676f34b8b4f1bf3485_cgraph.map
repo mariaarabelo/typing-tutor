@@ -1,0 +1,14 @@
+<map id="update_timer" name="update_timer">
+<area shape="rect" id="node1" title="handles the timer interrupts" alt="" coords="5,183,115,209"/>
+<area shape="rect" id="node2" href="$model_8c.html#acc64a6dd2c789a5483468b4fd413de3b" title="Updates currentState and gameStateChange." alt="" coords="174,132,289,159"/>
+<area shape="rect" id="node11" href="$group__timer.html#ga91a2072306c68353712a6b771287dc2c" title=" " alt="" coords="163,183,300,209"/>
+<area shape="rect" id="node12" href="$model_8c.html#acd34d1905fe143a9a315a18800d3f2a6" title="Updates the frame of the animation and respective active status." alt="" coords="164,233,299,260"/>
+<area shape="rect" id="node3" href="$model_8c.html#a2d136bf294a594a3f1360213197e0450" title="Frees the memory allocated for the typing test." alt="" coords="372,5,475,32"/>
+<area shape="rect" id="node4" href="$model_8c.html#ac3a22e6a5d1ad9d2224d854d7c693385" title=" " alt="" coords="368,56,479,83"/>
+<area shape="rect" id="node5" href="$model_8c.html#ab9c54d11895f3cb638794d2d645c61bf" title="Initializes the test." alt="" coords="371,107,475,133"/>
+<area shape="rect" id="node6" href="$model_8c.html#adaafd25c8a461deddb18152bd448d5f6" title=" " alt="" coords="356,157,491,184"/>
+<area shape="rect" id="node8" href="$group__rtc.html#ga13b766098356ee1c32b4348a999ca4b4" title=" " alt="" coords="367,208,479,235"/>
+<area shape="rect" id="node9" href="$model_8c.html#a12e57a65e724c988691dc9818207895c" title=" " alt="" coords="348,259,499,285"/>
+<area shape="rect" id="node7" href="$model_8c.html#aacf12f8cd193c09b06a729d28f14faae" title=" " alt="" coords="547,157,709,184"/>
+<area shape="rect" id="node10" href="$model_8c.html#a4cf06361fe03ece201dc59d5abd4369d" title=" " alt="" coords="559,259,697,285"/>
+</map>

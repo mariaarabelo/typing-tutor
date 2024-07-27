@@ -1,0 +1,6 @@
+<map id="handle_delete_key" name="handle_delete_key">
+<area shape="rect" id="node1" title="Goes back to the previous letter and resets the current letter status." alt="" coords="508,5,652,32"/>
+<area shape="rect" id="node2" href="$model_8c.html#affdaa1b5f5136664bd22e7799b7bc988" title=" " alt="" coords="325,5,460,32"/>
+<area shape="rect" id="node3" href="$group__model.html#gaf4ac0fcf9c7cabe4beb4eac81d78b8b6" title="Handles the keyboard interrupts." alt="" coords="176,5,277,32"/>
+<area shape="rect" id="node4" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,5,128,32"/>
+</map>

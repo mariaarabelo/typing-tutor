@@ -1,0 +1,5 @@
+<map id="drawStars" name="drawStars">
+<area shape="rect" id="node1" title="Draws the remaining stars on the screen." alt="" coords="332,5,419,32"/>
+<area shape="rect" id="node2" href="$view_8h.html#a19bb29bb8a74e2d753e25894de6051bd" title="Distributes the drawing of the game depending on the current state." alt="" coords="176,5,284,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,5,128,32"/>
+</map>

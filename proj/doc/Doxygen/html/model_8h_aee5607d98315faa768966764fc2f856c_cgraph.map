@@ -1,0 +1,13 @@
+<map id="process_key" name="process_key">
+<area shape="rect" id="node1" title="Processes the key pressed, updating the letter status and the current input, and also the statistics." alt="" coords="5,105,108,132"/>
+<area shape="rect" id="node2" href="$view_8h.html#a7388950ca6c61b844a290aae1772c4d7" title="Deletes the caret from the screen." alt="" coords="156,29,255,56"/>
+<area shape="rect" id="node4" href="$view_8h.html#adc5e6cc78a16311829dc821e0a85030b" title="Draws the game words on the screen." alt="" coords="158,130,253,157"/>
+<area shape="rect" id="node3" href="$group__video.html#ga985c2ca86c8f87d6dbc5956e34f45faa" title=" " alt="" coords="517,80,640,106"/>
+<area shape="rect" id="node5" href="$model_8h.html#a884f66aebb13ef5e5e37ed3247d493e6" title="Gets a key based on a char." alt="" coords="336,29,436,56"/>
+<area shape="rect" id="node6" href="$view_8c.html#a7388950ca6c61b844a290aae1772c4d7" title="Deletes the caret from the screen." alt="" coords="337,80,435,106"/>
+<area shape="rect" id="node7" href="$view_8c.html#a496b9cab89bb6d057ef7afc03774131b" title="Draws the caret on the screen." alt="" coords="341,130,431,157"/>
+<area shape="rect" id="node8" href="$view_8c.html#a9b73646129cbf750cc3c170aabe2ca6e" title="Draws a sprite on the screen, secondary_frame_buffer_no_mouse." alt="" coords="325,181,447,208"/>
+<area shape="rect" id="node10" href="$model_8h.html#ac32ae0a5328c6612261ec59de33d922e" title="Resets offset to starting of box." alt="" coords="337,232,435,258"/>
+<area shape="rect" id="node11" href="$view_8c.html#a40d5f2662419bcb429d6d930916ad211" title="Calculates the length of a word in pixels." alt="" coords="303,282,469,309"/>
+<area shape="rect" id="node9" href="$group__video.html#ga950e17209d152e8a40ec064a0b201b25" title=" " alt="" coords="533,181,625,208"/>
+</map>

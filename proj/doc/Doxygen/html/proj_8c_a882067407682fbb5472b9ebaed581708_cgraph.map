@@ -1,0 +1,10 @@
+<map id="end" name="end">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,52,159"/>
+<area shape="rect" id="node2" href="$group__model.html#ga8fdbc6c7bfca3ef4a8800a3cdc19d932" title="Free the memory allocated for the sprites." alt="" coords="136,5,259,32"/>
+<area shape="rect" id="node4" href="$group__keyboard.html#ga32cc4de66854f8a7bd909e7aa8b901ed" title="Unsubscribes interrupts." alt="" coords="102,56,293,83"/>
+<area shape="rect" id="node5" href="$group__mouse.html#ga5537331c50aea7130b79f16facdbac00" title="Sends a command to the mouse." alt="" coords="128,107,267,133"/>
+<area shape="rect" id="node6" href="$group__mouse.html#ga3ecf823d80520009ae5e0d76ae40a3c3" title="Unsubscribes interrupts." alt="" coords="110,157,285,184"/>
+<area shape="rect" id="node7" href="$group__rtc.html#gae0e5cb47db8832528abb7dc48255cd3a" title=" " alt="" coords="100,208,295,235"/>
+<area shape="rect" id="node8" href="$group__timer.html#gafabd21de449be154dd65d5fdb2d8045d" title=" " alt="" coords="114,259,281,285"/>
+<area shape="rect" id="node3" href="$group__sprite.html#ga607cfeb4f019a84c346eb3bce9da0420" title="Destroys a sprite." alt="" coords="343,5,457,32"/>
+</map>

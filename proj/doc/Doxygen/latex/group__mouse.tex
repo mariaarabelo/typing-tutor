@@ -1,0 +1,272 @@
+\hypertarget{group__mouse}{}\doxysection{Mouse}
+\label{group__mouse}\index{Mouse@{Mouse}}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__mouse_gadc6e5733fc3c22f0a7b2914188c49c90}{state}} \{ \newline
+\mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a0a7b6ed3dc3554a6b459f20fa24f834e}{STATE\+\_\+\+ZERO}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a98d2a2153b4ae0445fa0b114d65b94d9}{STATE\+\_\+\+INIT}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90af342921474d1d5042f68703890f98293}{STATE\+\_\+\+FIRST\+\_\+\+LINE}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a16103e7c06dd2cd42c81fd650e04452d}{STATE\+\_\+\+END\+\_\+\+FIRST\+\_\+\+LINE}}
+, \newline
+\mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a1b4fc3fbe342fa435801bb7039baefc5}{STATE\+\_\+\+VERTEX}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a6bd7e5c8273e89d95c2e448d7df18fb0}{STATE\+\_\+\+SECOND\+\_\+\+LINE}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a5823db0533d5d6602be7f087f451b53a}{STATE\+\_\+\+END\+\_\+\+SECOND\+\_\+\+LINE}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90af3f9f84c5967b769ca17cdc6c523f7fe}{STATE\+\_\+\+END}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga08895a8a691590216c1e72bbf1b2d333}{mouse\+\_\+subscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga005359c6b203ad4ffb84b4835642881c}{mouse\+\_\+enable\+\_\+data\+\_\+reporting}} (void)
+\begin{DoxyCompactList}\small\item\em Enables stream mode mouse data reporting. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_gaed4404005e4c565ac36656307386e0ac}{mouse\+\_\+ih}} (void)
+\begin{DoxyCompactList}\small\item\em Handles mouse interrupts. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_gaa82b5a98d8eeaa9cdaba9d1d2041e3de}{parse}} (void)
+\begin{DoxyCompactList}\small\item\em Parse packet. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_gadfdcc6cebe1d49b18f13158fe953d954}{sync}} (void)
+\begin{DoxyCompactList}\small\item\em sync packet \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga5537331c50aea7130b79f16facdbac00}{mouse\+\_\+command}} (uint32\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Sends a command to the mouse. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga13e2acbab096b08d81273fc98cb02795}{obf\+\_\+full}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the output buffer is full. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga0065111d4f2e30c82dc5b332f6f50825}{ibf\+\_\+empty}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the input buffer is empty. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga9b2c46546887d9d1b1cd533d2d7d6f7f}{process\+\_\+packet}} (struct packet $\ast$\mbox{\hyperlink{model_8c_a26e83eca70c2b9169fbbb0eac7e32e32}{pp}}, uint8\+\_\+t x\+\_\+len, uint8\+\_\+t tolerance)
+\begin{DoxyCompactList}\small\item\em Process state based on the packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the i8042 KBC \} 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__mouse_gadc6e5733fc3c22f0a7b2914188c49c90}\label{group__mouse_gadc6e5733fc3c22f0a7b2914188c49c90}} 
+\index{Mouse@{Mouse}!state@{state}}
+\index{state@{state}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__mouse_gadc6e5733fc3c22f0a7b2914188c49c90}{state}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATE\_ZERO@{STATE\_ZERO}!Mouse@{Mouse}}\index{Mouse@{Mouse}!STATE\_ZERO@{STATE\_ZERO}}}\mbox{\Hypertarget{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a0a7b6ed3dc3554a6b459f20fa24f834e}\label{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a0a7b6ed3dc3554a6b459f20fa24f834e}} 
+STATE\+\_\+\+ZERO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATE\_INIT@{STATE\_INIT}!Mouse@{Mouse}}\index{Mouse@{Mouse}!STATE\_INIT@{STATE\_INIT}}}\mbox{\Hypertarget{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a98d2a2153b4ae0445fa0b114d65b94d9}\label{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a98d2a2153b4ae0445fa0b114d65b94d9}} 
+STATE\+\_\+\+INIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATE\_FIRST\_LINE@{STATE\_FIRST\_LINE}!Mouse@{Mouse}}\index{Mouse@{Mouse}!STATE\_FIRST\_LINE@{STATE\_FIRST\_LINE}}}\mbox{\Hypertarget{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90af342921474d1d5042f68703890f98293}\label{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90af342921474d1d5042f68703890f98293}} 
+STATE\+\_\+\+FIRST\+\_\+\+LINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATE\_END\_FIRST\_LINE@{STATE\_END\_FIRST\_LINE}!Mouse@{Mouse}}\index{Mouse@{Mouse}!STATE\_END\_FIRST\_LINE@{STATE\_END\_FIRST\_LINE}}}\mbox{\Hypertarget{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a16103e7c06dd2cd42c81fd650e04452d}\label{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a16103e7c06dd2cd42c81fd650e04452d}} 
+STATE\+\_\+\+END\+\_\+\+FIRST\+\_\+\+LINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATE\_VERTEX@{STATE\_VERTEX}!Mouse@{Mouse}}\index{Mouse@{Mouse}!STATE\_VERTEX@{STATE\_VERTEX}}}\mbox{\Hypertarget{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a1b4fc3fbe342fa435801bb7039baefc5}\label{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a1b4fc3fbe342fa435801bb7039baefc5}} 
+STATE\+\_\+\+VERTEX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATE\_SECOND\_LINE@{STATE\_SECOND\_LINE}!Mouse@{Mouse}}\index{Mouse@{Mouse}!STATE\_SECOND\_LINE@{STATE\_SECOND\_LINE}}}\mbox{\Hypertarget{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a6bd7e5c8273e89d95c2e448d7df18fb0}\label{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a6bd7e5c8273e89d95c2e448d7df18fb0}} 
+STATE\+\_\+\+SECOND\+\_\+\+LINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATE\_END\_SECOND\_LINE@{STATE\_END\_SECOND\_LINE}!Mouse@{Mouse}}\index{Mouse@{Mouse}!STATE\_END\_SECOND\_LINE@{STATE\_END\_SECOND\_LINE}}}\mbox{\Hypertarget{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a5823db0533d5d6602be7f087f451b53a}\label{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a5823db0533d5d6602be7f087f451b53a}} 
+STATE\+\_\+\+END\+\_\+\+SECOND\+\_\+\+LINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATE\_END@{STATE\_END}!Mouse@{Mouse}}\index{Mouse@{Mouse}!STATE\_END@{STATE\_END}}}\mbox{\Hypertarget{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90af3f9f84c5967b769ca17cdc6c523f7fe}\label{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90af3f9f84c5967b769ca17cdc6c523f7fe}} 
+STATE\+\_\+\+END&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__mouse_ga0065111d4f2e30c82dc5b332f6f50825}\label{group__mouse_ga0065111d4f2e30c82dc5b332f6f50825}} 
+\index{Mouse@{Mouse}!ibf\_empty@{ibf\_empty}}
+\index{ibf\_empty@{ibf\_empty}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{ibf\_empty()}{ibf\_empty()}}
+{\footnotesize\ttfamily bool() ibf\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the input buffer is empty. 
+
+so we know if we can write to it
+
+\begin{DoxyReturn}{Returns}
+true if the input buffer is empty, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_ga5537331c50aea7130b79f16facdbac00}\label{group__mouse_ga5537331c50aea7130b79f16facdbac00}} 
+\index{Mouse@{Mouse}!mouse\_command@{mouse\_command}}
+\index{mouse\_command@{mouse\_command}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_command()}{mouse\_command()}}
+{\footnotesize\ttfamily int() mouse\+\_\+command (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Sends a command to the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & command to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga5537331c50aea7130b79f16facdbac00_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga005359c6b203ad4ffb84b4835642881c}\label{group__mouse_ga005359c6b203ad4ffb84b4835642881c}} 
+\index{Mouse@{Mouse}!mouse\_enable\_data\_reporting@{mouse\_enable\_data\_reporting}}
+\index{mouse\_enable\_data\_reporting@{mouse\_enable\_data\_reporting}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_enable\_data\_reporting()}{mouse\_enable\_data\_reporting()}}
+{\footnotesize\ttfamily int() mouse\+\_\+enable\+\_\+data\+\_\+reporting (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enables stream mode mouse data reporting. 
+
+sends the respective command to the mouse
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_gaed4404005e4c565ac36656307386e0ac}\label{group__mouse_gaed4404005e4c565ac36656307386e0ac}} 
+\index{Mouse@{Mouse}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Handles mouse interrupts. 
+
+Reads the st reg and the output buffer if there was some error, the byte read from the OB is discarded Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_gaed4404005e4c565ac36656307386e0ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga08895a8a691590216c1e72bbf1b2d333}\label{group__mouse_ga08895a8a691590216c1e72bbf1b2d333}} 
+\index{Mouse@{Mouse}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga08895a8a691590216c1e72bbf1b2d333_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}\label{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}} 
+\index{Mouse@{Mouse}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga13e2acbab096b08d81273fc98cb02795}\label{group__mouse_ga13e2acbab096b08d81273fc98cb02795}} 
+\index{Mouse@{Mouse}!obf\_full@{obf\_full}}
+\index{obf\_full@{obf\_full}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{obf\_full()}{obf\_full()}}
+{\footnotesize\ttfamily bool() obf\+\_\+full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the output buffer is full. 
+
+so we know if we can read from it
+
+\begin{DoxyReturn}{Returns}
+true if the output buffer is full, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_gaa82b5a98d8eeaa9cdaba9d1d2041e3de}\label{group__mouse_gaa82b5a98d8eeaa9cdaba9d1d2041e3de}} 
+\index{Mouse@{Mouse}!parse@{parse}}
+\index{parse@{parse}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void() parse (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Parse packet. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_gaa82b5a98d8eeaa9cdaba9d1d2041e3de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga9b2c46546887d9d1b1cd533d2d7d6f7f}\label{group__mouse_ga9b2c46546887d9d1b1cd533d2d7d6f7f}} 
+\index{Mouse@{Mouse}!process\_packet@{process\_packet}}
+\index{process\_packet@{process\_packet}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{process\_packet()}{process\_packet()}}
+{\footnotesize\ttfamily void() process\+\_\+packet (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{pp,  }\item[{uint8\+\_\+t}]{x\+\_\+len,  }\item[{uint8\+\_\+t}]{tolerance }\end{DoxyParamCaption})}
+
+
+
+Process state based on the packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & packet to be processed \\
+\hline
+{\em x\+\_\+len} & length of the x movement \\
+\hline
+{\em tolerance} & tolerance of the movement \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__mouse_gadfdcc6cebe1d49b18f13158fe953d954}\label{group__mouse_gadfdcc6cebe1d49b18f13158fe953d954}} 
+\index{Mouse@{Mouse}!sync@{sync}}
+\index{sync@{sync}!Mouse@{Mouse}}
+\doxysubsubsection{\texorpdfstring{sync()}{sync()}}
+{\footnotesize\ttfamily void() sync (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+sync packet 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_gadfdcc6cebe1d49b18f13158fe953d954_icgraph}
+\end{center}
+\end{figure}

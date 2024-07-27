@@ -1,0 +1,63 @@
+\hypertarget{rtc_8h}{}\doxysection{drivers/rtc/rtc.h File Reference}
+\label{rtc_8h}\index{drivers/rtc/rtc.h@{drivers/rtc/rtc.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for rtc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{rtc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{rtc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtc_gab54f2d18b47b47a59f718e16099446e8}{RTC\+\_\+\+MASK}}~5
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga910ac5f2c1b4016e433f9832358a1816}{IRQ\+\_\+\+RTC}}~8
+\item 
+\#define \mbox{\hyperlink{group__rtc_gac7ccdd8e98d8f7fdad8dfe99c467d5d8}{REGISTER\+\_\+\+INPUT}}~0x70
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga5e3f3a35c56673c2a54d9f4eadb759a9}{REGISTER\+\_\+\+OUTPUT}}~0x71
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga79c0bb250ad248af29b370b20dd1fb29}{REGISTER\+\_\+\+UPDATING}}~10
+\item 
+\#define \mbox{\hyperlink{group__rtc_gac261047d18c2505db97b38b7b157f1fd}{REGISTER\+\_\+\+COUNTING}}~11
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga48fcf4f2eeef6769d588168d4ac2ab0e}{SECONDS}}~0
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga84be9dcfa5a172ee83121620d15c8e29}{MINUTES}}~2
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga212d0f839f6f7ca43ccde311f93d5892}{HOURS}}~4
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga509a01c55cbe47386fe24602b7c7fda1}{DAY}}~7
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga3729d06495d9713592f79f3122c9e677}{MONTH}}~8
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga5871356500f559add06ea81d60331b1b}{YEAR}}~9
+\item 
+\#define \mbox{\hyperlink{group__rtc_gacc166508d5cfbf4100f8622ce97f4985}{BINARY}}~BIT(2)
+\item 
+\#define \mbox{\hyperlink{group__rtc_gae07bc1582ec2a0d53dd74350b5a19c5e}{UPDATING}}~BIT(7)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__rtc_gabb90a7b2307300874b2529d94aafacca}{rtc\+\_\+subscribe\+\_\+interrupts}} ()
+\item 
+int \mbox{\hyperlink{group__rtc_gae0e5cb47db8832528abb7dc48255cd3a}{rtc\+\_\+unsubscribe\+\_\+interrupts}} ()
+\item 
+int \mbox{\hyperlink{group__rtc_ga13b766098356ee1c32b4348a999ca4b4}{rtc\+\_\+read\+\_\+time}} (\mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}} $\ast$)
+\end{DoxyCompactItemize}

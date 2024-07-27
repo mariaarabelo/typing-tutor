@@ -1,0 +1,1907 @@
+\hypertarget{group__model}{}\doxysection{Model}
+\label{group__model}\index{Model@{Model}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCaret}{Caret}}
+\begin{DoxyCompactList}\small\item\em Structure that represents the caret (Line under the current letter) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structLetter}{Letter}}
+\begin{DoxyCompactList}\small\item\em Structure that represents a letter. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structWord}{Word}}
+\begin{DoxyCompactList}\small\item\em Structure that represents a word. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structStatistics}{Statistics}}
+\begin{DoxyCompactList}\small\item\em Has the structures to save the statistics of the game. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structTypingTest}{Typing\+Test}}
+\begin{DoxyCompactList}\small\item\em Has the structures to save the words and user input. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structHighScore}{High\+Score}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__model_gab3c7af4820830f9166ede9e5623c4e73}{Key}} \{ \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2b464f709faf629f08dbc2c4544a7368}{NONE\+\_\+\+KEY}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a951ab68bb8f7daafb78951107080904e}{ENTER}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a42a4ade1acd55a49164099104990e09f}{A}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a3f2a77ecd272aa6d6b5902faa5e5fc68}{B}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a739ce3f516592d245d16fd8a3893472c}{C}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a77a6b11f9898c052926f1d49765861e8}{D}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73ab199e021998d49b1f09338d8b9b18ecb}{E}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73af382a63cc3d6491bf26b59e66f46826d}{F}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2fe993340f6abb2234e543cd427df70b}{G}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a5008b1179f399a2273fd3f6a7fc3b292}{H}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73ad091b8e376f7cf432dc367e1eda65e85}{I}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a03605500b0c55f3d95874e8edfcf4e30}{J}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a660a38111995acbeb2820648e82f0d8c}{K}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73aef31cc6fe9479955961311ee18ac205f}{L}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a51ca6c63d97347ee58cc7da59ab6994b}{M}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2c63acbe79d9f41ba6bb7766e9c37702}{N}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73af4b8b7698dfedf5562a7db2bdb07010a}{O}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a82f05f38f6a17b117cdd2b83227912c6}{P}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73aa53ab217f1572250a530c8c2b3c820cf}{Q}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a1784b1a3d7cbd43c45ff82c72d05e4ae}{R}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73af1ce01387d2348f8b858721a7db81670}{S}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a21f40778b7db9343a6ca75ec2c41ccce}{T}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73ac461e84f27bbb236874e1011cd66031f}{U}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a28f41f1144eee94834387e9a6a088bc1}{V}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73ab722ceeb601c72cd78fbd35f3581fdf7}{W}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a58833a3110c570fb05130d40c365d1e4}{X}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a5596231eabd6cf29050967d5ac83ad84}{Y}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73aa70478ce277ffc322f8e1e3418e07355}{Z}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73af81277bcd86412fe04bb68718ea09392}{COMMA}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73af65a8a7e47ca896d414e6c098e100038}{PERIOD}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a29cf94637337909c3813bb50d6e9b3ee}{COLON}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73aba3ab86538e7779c202fbdbd5318ad4e}{EXCLAMATION}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a6069687c1576cf9757e02f44e9060ed2}{RIGHT\+\_\+\+PARENTHESIS}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73ae117e3533122c80b262257b49b21cddf}{ZERO}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a7a725f13af144bdef532d0389ba75e0d}{ONE}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a0e793500a63ffa575b9b712ca3bc9851}{TWO}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a1251fbf93888ad32fe0ae54d49bcef17}{THREE}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a23d7ef5341c6930d19b2ecbb997977cf}{FOUR}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a3a40d11d30db182ab8f9846aa9458bec}{FIVE}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73aadffddd32c3e7497e32cd7e430c9c106}{SIX}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a9a193f3e84352f3fbbe44f8d275a820c}{SEVEN}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2fd39b67b424f4ea3b4c11ce3195ab8b}{EIGHT}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73aea09d09b793ccc4a4b5983368d18a4ab}{NINE}}
+, \mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73ac921ff2cfc571c1d19b0485d7f6926ee}{BACK}}
+, \newline
+\mbox{\hyperlink{group__model_ggab3c7af4820830f9166ede9e5623c4e73af5297152557c7da396243000ca240e89}{ESC}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the Keyboard keys. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__model_ga7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \{ \newline
+\mbox{\hyperlink{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721}{MENU}}
+, \mbox{\hyperlink{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a2a3b2d79801adcf99fc1d4565dc6f825}{INSTRUCTIONS}}
+, \mbox{\hyperlink{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285ae564c3a2b71506c3a10f8e6c9379c02d}{STATISTICS}}
+, \mbox{\hyperlink{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}{GAME}}
+, \newline
+\mbox{\hyperlink{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a883ad53602b5ccbb5d80b4279e309468}{TIMERS}}
+, \mbox{\hyperlink{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a806f5c5dcdfbc2cd5bb618a46a3b3b7e}{HIGHSCORES}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the possible states of game states. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__model_ga736a770455f42dc69910e2687d533b55}{General\+State}} \{ \mbox{\hyperlink{group__model_gga736a770455f42dc69910e2687d533b55a1061be6c3fb88d32829cba6f6b2be304}{RUNNING}}
+, \mbox{\hyperlink{group__model_gga736a770455f42dc69910e2687d533b55a7a10b5d68d31711288e1fe0fa17dbf4f}{EXIT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the possible states of the application. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__model_ga50af89fcbe8ccc22f6b6ea5f476cfdc9}{Gesture\+State}} \{ \mbox{\hyperlink{group__model_gga50af89fcbe8ccc22f6b6ea5f476cfdc9aebc0c6349575a377dd2f19f82af72da4}{GESTURE\+\_\+\+ZERO}}
+, \mbox{\hyperlink{group__model_gga50af89fcbe8ccc22f6b6ea5f476cfdc9a0808bd48f74c40b9db7f21c5bd12e1f4}{GESTURE\+\_\+\+LB}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the possible states of the swipe-\/right gesture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__model_gab589e30806358da5be646f623dbb1df0}{initialize\+\_\+key\+\_\+maps}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the key maps. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_ga5347e85e2c2ea95aa825425bb336f148}{initialize\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gaaf023ed701a3cbcdfbb1ce03f92f63e4}{initialize\+\_\+key\+\_\+sprite\+\_\+map}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the key sprite map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_ga8fdbc6c7bfca3ef4a8800a3cdc19d932}{destroy\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Free the memory allocated for the sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_ga83b1742f41d6e701033e0dd6f113c411}{update\+\_\+keyboard}} ()
+\begin{DoxyCompactList}\small\item\em Assigns tasks to the respective keys. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_ga3dbbef8766f0ce676f34b8b4f1bf3485}{update\+\_\+timer}} ()
+\begin{DoxyCompactList}\small\item\em handles the timer interrupts \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gaf4ac0fcf9c7cabe4beb4eac81d78b8b6}{key\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em Handles the keyboard interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_ga2d136bf294a594a3f1360213197e0450}{destroy\+\_\+test}} ()
+\begin{DoxyCompactList}\small\item\em Frees the memory allocated for the typing test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_ga1bf6ea5df1424ec5b9356282463ae941}{destroy\+\_\+stats}} ()
+\begin{DoxyCompactList}\small\item\em Frees the memory allocated for the statistics. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gacc64a6dd2c789a5483468b4fd413de3b}{set\+Game\+State}} (\mbox{\hyperlink{group__model_ga7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \mbox{\hyperlink{group__mouse_gadc6e5733fc3c22f0a7b2914188c49c90}{state}})
+\begin{DoxyCompactList}\small\item\em Updates current\+State and game\+State\+Change. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gac32ae0a5328c6612261ec59de33d922e}{reset\+\_\+offset}} ()
+\begin{DoxyCompactList}\small\item\em Resets offset to starting of box. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__model_ga2e5b5f1e5dd9806b0a18e19fccb7e850}{offset\+\_\+handler}} (int x, int end\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Handles the offset for drawing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gab5fa7e7da1851578789c26ec9d71448b}{update\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Sync mouse bytes and calls update\+\_\+mouse\+\_\+date. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__model_ga2ba2c43854b2302eaaf76366ee10d159}{pressed\+\_\+button}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$button\+\_\+sprite)
+\begin{DoxyCompactList}\small\item\em Checks if the mouse sprite is over a button and if left button is pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_ga863baa087fc06f01a6a564bd309505ce}{check\+Actions}} ()
+\begin{DoxyCompactList}\small\item\em Checks the actions to be taken based on the mouse data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__model_gab3c7af4820830f9166ede9e5623c4e73}{Key}} \mbox{\hyperlink{group__model_ga884f66aebb13ef5e5e37ed3247d493e6}{char\+\_\+to\+\_\+key}} (char c)
+\begin{DoxyCompactList}\small\item\em Gets a key based on a char. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gab928d80e53e1b9328939c6d548717c4d}{check\+Gesture}} ()
+\begin{DoxyCompactList}\small\item\em Updates the swipe-\/right gesture status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gad48d10ec2a1703d551dc554184cf24ca}{fill\+\_\+current\+\_\+word}} ()
+\begin{DoxyCompactList}\small\item\em Fills correctly the remaining letters of the current word. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gaee5607d98315faa768966764fc2f856c}{process\+\_\+key}} (char c, \mbox{\hyperlink{group__model_gab3c7af4820830f9166ede9e5623c4e73}{Key}} key, \mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$\mbox{\hyperlink{view_8c_ab46ff451329655633b6d77ee36692103}{test}}, \mbox{\hyperlink{group__model_ga7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \mbox{\hyperlink{group__mouse_gadc6e5733fc3c22f0a7b2914188c49c90}{state}})
+\begin{DoxyCompactList}\small\item\em Processes the key pressed, updating the letter status and the current input, and also the statistics. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gabdb87c8ab72e44c6a3114d8734f475f0}{handle\+\_\+space\+\_\+key}} (\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$\mbox{\hyperlink{view_8c_ab46ff451329655633b6d77ee36692103}{test}})
+\begin{DoxyCompactList}\small\item\em Checks if the current word is correct and advances to the next word, also updates the statistics. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gaacf12f8cd193c09b06a729d28f14faae}{initialize\+\_\+high\+\_\+scores}} ()
+\item 
+void \mbox{\hyperlink{group__model_ga12e57a65e724c988691dc9818207895c}{update\+\_\+high\+\_\+scores}} (int wpm, \mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}} achieved\+\_\+time)
+\item 
+void \mbox{\hyperlink{group__model_ga4cf06361fe03ece201dc59d5abd4369d}{save\+\_\+high\+\_\+scores}} ()
+\item 
+void \mbox{\hyperlink{group__model_gadaafd25c8a461deddb18152bd448d5f6}{load\+\_\+high\+\_\+scores}} ()
+\item 
+void \mbox{\hyperlink{group__model_gabf69e0a27419eda374e9be68a9a18436}{handle\+\_\+delete\+\_\+key}} (\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$\mbox{\hyperlink{view_8c_ab46ff451329655633b6d77ee36692103}{test}})
+\begin{DoxyCompactList}\small\item\em Goes back to the previous letter and resets the current letter status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gacd34d1905fe143a9a315a18800d3f2a6}{update\+Animation}} (\mbox{\hyperlink{structAnimation}{Animation}} $\ast$animation)
+\begin{DoxyCompactList}\small\item\em Updates the frame of the animation and respective active status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_ga6fd340363e321476815273c4bb17b211}{shift\+\_\+words\+\_\+up}} (\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$\mbox{\hyperlink{view_8c_ab46ff451329655633b6d77ee36692103}{test}})
+\begin{DoxyCompactList}\small\item\em Moves the penultimate line to first line, last line to second and loads new words. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_ga6909d155b4129f9628a90e2bca468276}{load\+\_\+new\+\_\+word}} (\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$\mbox{\hyperlink{view_8c_ab46ff451329655633b6d77ee36692103}{test}}, int index)
+\begin{DoxyCompactList}\small\item\em Loads new words to the test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gae1e1127622ac454d7afeb895dd1a2bb6}{start\+Animation}} (\mbox{\hyperlink{structAnimation}{Animation}} $\ast$animation)
+\begin{DoxyCompactList}\small\item\em Starts the animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__model_gab9c54d11895f3cb638794d2d645c61bf}{initialize\+Test}} (\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$$\ast$test\+Ptr, char $\ast$\mbox{\hyperlink{model_8c_ae09cdd6ccb86699894d8589d48011a09}{word\+Pool}}\mbox{[}$\,$\mbox{]}, int pool\+Size, int word\+Count)
+\begin{DoxyCompactList}\small\item\em Initializes the test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__model_ga47487d5d8a9451453527fc6bf7a830cb}{Caret\+::x}}
+\item 
+int \mbox{\hyperlink{group__model_ga1f828e6d5f281d231fe03387530b5641}{Caret\+::y}}
+\item 
+int \mbox{\hyperlink{group__model_ga76486b78482d0ffcc078afe7cf23af96}{Caret\+::width}}
+\item 
+int \mbox{\hyperlink{group__model_ga728fa1d24e3546d00f2b0127da4306d5}{Caret\+::height}}
+\item 
+char \mbox{\hyperlink{group__model_ga69866a4d8368d59457a9ec9601cc62f4}{Letter\+::character}}
+\item 
+int \mbox{\hyperlink{group__model_gae10bc81b93aad5e5d39be75acd39e0c3}{Letter\+::status}}
+\item 
+\mbox{\hyperlink{structLetter}{Letter}} \mbox{\hyperlink{group__model_ga67016cf85d79bb477d1949843914b8b8}{Word\+::letters}} \mbox{[}\mbox{\hyperlink{model_8h_aec7b4994021c554c1761ea31d016b680}{MAX\+\_\+\+WORD\+\_\+\+LENGTH}}\mbox{]}
+\item 
+int \mbox{\hyperlink{group__model_ga38bf963dbe85ef39462961086e2954e5}{Word\+::length}}
+\item 
+int \mbox{\hyperlink{group__model_ga618cb45933f8c9df22fdb55624a47822}{Word\+::status}}
+\item 
+int \mbox{\hyperlink{group__model_ga4a83977229cf053476234ce30fe09e20}{Word\+::x}}
+\item 
+int \mbox{\hyperlink{group__model_gaaa705f6919249d0542ecd0d7d77c9dca}{Word\+::y}}
+\item 
+int \mbox{\hyperlink{group__model_gaf44fc19e46965bbbcd22201023e6216c}{Word\+::line}}
+\item 
+int \mbox{\hyperlink{group__model_gada9c466adc9f1bb4c733d43c324adcc7}{Statistics\+::correct\+Words}}
+\item 
+int \mbox{\hyperlink{group__model_ga518a5d2b2df30f80ee29d666541b1285}{Statistics\+::incorrect\+Words}}
+\item 
+int \mbox{\hyperlink{group__model_gada11a3c493737742365f9f4c4e61d27c}{Statistics\+::correct\+Letters}}
+\item 
+int \mbox{\hyperlink{group__model_ga100fc161b1a470ff380751239a5bfd41}{Statistics\+::incorrect\+Letters}}
+\item 
+int \mbox{\hyperlink{group__model_ga63c01cf87898a643c956a944268ea9c8}{Statistics\+::typed\+Letters}}
+\item 
+int \mbox{\hyperlink{group__model_gae7303d249642c3c84003b2f74843f7b8}{Statistics\+::typed\+Words}}
+\item 
+int \mbox{\hyperlink{group__model_ga20fd3f1327c0026c27c45023612d5276}{Statistics\+::time}}
+\item 
+\mbox{\hyperlink{structWord}{Word}} $\ast$ \mbox{\hyperlink{group__model_gaa7a4fed92e1fde766b32c3a45e21f6c3}{Typing\+Test\+::words}}
+\item 
+int \mbox{\hyperlink{group__model_gae6acecb5a13f1010fe83a320c1c51a64}{Typing\+Test\+::word\+Count}}
+\item 
+int \mbox{\hyperlink{group__model_ga4de63fe9efbf29785f9ec4e4ba1a8005}{Typing\+Test\+::current\+Word\+Index}}
+\item 
+int \mbox{\hyperlink{group__model_ga2b7623aed0ab70408f9798932fe83cba}{Typing\+Test\+::current\+Input\+Index}}
+\item 
+char \mbox{\hyperlink{group__model_gae171bb471e09bdfccec1b496974b8830}{Typing\+Test\+::current\+Input}} \mbox{[}\mbox{\hyperlink{model_8h_aec7b4994021c554c1761ea31d016b680}{MAX\+\_\+\+WORD\+\_\+\+LENGTH}}\mbox{]}
+\item 
+int \mbox{\hyperlink{group__model_gacc54695c9daac12ef42c2706773c221a}{Typing\+Test\+::number\+\_\+of\+\_\+lines}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga1de2a84a9f6625a6314ba51649edc495}{CURSOR\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga015db6cf51ef5b76025bd0a9073dd291}{STAR\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gac08b1e1c22793b7a7366b5da427fa615}{PLAY\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga148bbeefb99ad06006bb2381b6025590}{INSTRUCTIONS\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gac81a07e38cd31ad6726a31c7709efa69}{HIGHSCORES\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga4c34dd228889f35273bd7adc6c919408}{TIMER15\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga8fca7038fca835c40ced3332ee437277}{TIMER30\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga14201c217dc1fd611dc21a476840f994}{TIMER60\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga317326080572c43d8cbcfcea79e5a4c7}{BACK\+\_\+\+TO\+\_\+\+MENU\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga58380c0cb3d548abe11a301f54157154}{PLAY\+\_\+\+AGAIN\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gabe5265fd18fc910e93d9ae73022c3f66}{A\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga2b8c825d11b6640e95060823ded1a366}{B\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga4db9d1b0380cf54e0fd1c5d68e6b270e}{C\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gaa4575e70c988b127ad403d7091734eec}{D\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gabba4b69989d6570d3ccac51671225d97}{E\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gacc454239f78c398218f63264088dc24d}{F\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gaac26bccfc81d3eda495afa237c90c83d}{G\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gaa66700370c4dabc955de9ff2c0f831f4}{H\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga5afdfa2464a42571896e2303d34cf6c7}{I\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga50df15b3c41db6d3fc09b1142af9f9b4}{J\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gaa0d2e3c11774a32053e31d92e4679b17}{K\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga4b5832eabdc7c75f19bb6d0c266c6f61}{L\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gabe10776f0457cd31cfdaf60fb8d9cdaa}{M\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga8d5353123a5e178b7da997fe7efbb2c0}{N\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga9ff1aa6fd9bdebad4e886b519c58c4a6}{O\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gac8fd853a8f5ec586f6b974c44e804483}{P\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga072ae8142dc5ba8b84b47369719ab6d5}{Q\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga0daa33e78bc92dd25e6bbcbba8c04230}{R\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga9febb791dd0ce351c2787df705605067}{S\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gaad1f58c772a50c1def5b8e30f2fd6dfc}{T\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga57e5384168c96ef6713917ae8ed90748}{U\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga4dbf9ebf9704b2d1cd85cf0b0f60671e}{V\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga9036b07f9f5c0414b98de07aaad4be08}{W\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga217494c372c55d81680f7367187262a3}{X\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga77cd8f442850f329ddc5c7f1743183fa}{Y\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gaa419361ae5d9bc973f1a06e3a887225a}{Z\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gabce46d123cbfedd6d569ff27e1145f76}{COMMA\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gae01b20350a84ffe8fb0f776a30ba2457}{PERIOD\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga08d1774382993825cf4bce79c435a923}{EXCLAMATION\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gac303536db407a9b59b89961e2cb301c9}{COLON\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga4c21d981ef841b43cb0e716aca2b0715}{RIGHT\+\_\+\+PARENTHESIS\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gae0663e3c8b15672fe4e3e5ae3a9faf4e}{ZERO\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gad6a3fe34b381409feae329ee6fa6fe11}{ONE\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga5a542621d1c710ce9b10bce7b727c91f}{TWO\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga4d5a5017be2537a43b2079073650f9d2}{THREE\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga1da8c002e7012c11da199004a558b33b}{FOUR\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga13e549f45fd809dae5a8fb8e5962034a}{FIVE\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gaa01e23c5cc369a682888fd253a4d5cf9}{SIX\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga9185f2e1f67bb259ff198c7cec35f5a4}{SEVEN\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gaab72232ad48cf00d27b374099f99f11c}{EIGHT\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gae26482af15243ae25bdeec7282bdb78a}{NINE\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gae60e1707de2cf006f29dc7e0bfd33533}{PANDA\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga02c52ea6c682bf40dfb05e464a3cdd40}{BAMBU\+\_\+\+RIGHT\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gad6b4ce5b1f9d351cfa7b948af2ad5137}{BAMBU\+\_\+\+LEFT\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gaaf4911db027b22c9c476a4c0c49fd1f1}{PANDA\+\_\+0\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga4303b0b44502cfb32f9bf7b3329f1015}{MAD\+\_\+1\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga709dfe452cc215466d0887240752c901}{MAD\+\_\+2\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_gadd1302556ad39104778f827d1fb8b3c2}{MAD\+\_\+3\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga567bb4ca21794f9f60765574da6f7d1b}{MAD\+\_\+4\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga03160397de56f9e70513ee5e9c3dca2d}{HAPPY\+\_\+1\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga7dce761f435f4393b697a0d223b0b6d9}{HAPPY\+\_\+2\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga4241d89eb6507b9d08346f35d6dcabda}{HAPPY\+\_\+3\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__model_ga19db75eb652c628da8f7b4ca38c0cb1e}{HAPPY\+\_\+4\+\_\+\+SPRITE}}
+\item 
+\mbox{\hyperlink{structAnimation}{Animation}} \mbox{\hyperlink{group__model_gac8898c160c8e439c28dd7af5fddf18ab}{happy\+Animation}}
+\item 
+\mbox{\hyperlink{structAnimation}{Animation}} \mbox{\hyperlink{group__model_ga0bb1ffa15b8ed7e9d75852678187e7d3}{mad\+Animation}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$$\ast$ \mbox{\hyperlink{group__model_gaa9498b15224d9d596623c7b10f69ddb0}{happy\+Frames}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$$\ast$ \mbox{\hyperlink{group__model_ga46ed8fd74ba67970b3d002c3b0a301c3}{mad\+Frames}}
+\item 
+int \mbox{\hyperlink{group__model_ga9f1f2b237d7d8366ac94d5dbcb3d93e3}{High\+Score\+::wpm}}
+\item 
+\mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}} \mbox{\hyperlink{group__model_gad72df6d6fee9e649b11c234d4ed8e7cf}{High\+Score\+::achieved\+\_\+time}}
+\item 
+\mbox{\hyperlink{structHighScore}{High\+Score}} \mbox{\hyperlink{group__model_ga428189dcc183af428a597a48e027d55f}{high\+Scores}} \mbox{[}\mbox{\hyperlink{model_8h_abfe67c432d4cc4227a8125c799c39092}{MAX\+\_\+\+HIGH\+\_\+\+SCORES}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions related to the game model and its respective logic 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__model_ga7899b65f1ea0f655e4bbf8d2a5714285}\label{group__model_ga7899b65f1ea0f655e4bbf8d2a5714285}} 
+\index{Model@{Model}!GameState@{GameState}}
+\index{GameState@{GameState}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{GameState}{GameState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__model_ga7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}}}
+
+
+
+Enumerates the possible states of game states. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MENU@{MENU}!Model@{Model}}\index{Model@{Model}!MENU@{MENU}}}\mbox{\Hypertarget{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721}\label{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721}} 
+MENU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INSTRUCTIONS@{INSTRUCTIONS}!Model@{Model}}\index{Model@{Model}!INSTRUCTIONS@{INSTRUCTIONS}}}\mbox{\Hypertarget{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a2a3b2d79801adcf99fc1d4565dc6f825}\label{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a2a3b2d79801adcf99fc1d4565dc6f825}} 
+INSTRUCTIONS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATISTICS@{STATISTICS}!Model@{Model}}\index{Model@{Model}!STATISTICS@{STATISTICS}}}\mbox{\Hypertarget{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285ae564c3a2b71506c3a10f8e6c9379c02d}\label{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285ae564c3a2b71506c3a10f8e6c9379c02d}} 
+STATISTICS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME@{GAME}!Model@{Model}}\index{Model@{Model}!GAME@{GAME}}}\mbox{\Hypertarget{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}\label{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}} 
+GAME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMERS@{TIMERS}!Model@{Model}}\index{Model@{Model}!TIMERS@{TIMERS}}}\mbox{\Hypertarget{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a883ad53602b5ccbb5d80b4279e309468}\label{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a883ad53602b5ccbb5d80b4279e309468}} 
+TIMERS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HIGHSCORES@{HIGHSCORES}!Model@{Model}}\index{Model@{Model}!HIGHSCORES@{HIGHSCORES}}}\mbox{\Hypertarget{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a806f5c5dcdfbc2cd5bb618a46a3b3b7e}\label{group__model_gga7899b65f1ea0f655e4bbf8d2a5714285a806f5c5dcdfbc2cd5bb618a46a3b3b7e}} 
+HIGHSCORES&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__model_ga736a770455f42dc69910e2687d533b55}\label{group__model_ga736a770455f42dc69910e2687d533b55}} 
+\index{Model@{Model}!GeneralState@{GeneralState}}
+\index{GeneralState@{GeneralState}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{GeneralState}{GeneralState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__model_ga736a770455f42dc69910e2687d533b55}{General\+State}}}
+
+
+
+Enumerates the possible states of the application. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNNING@{RUNNING}!Model@{Model}}\index{Model@{Model}!RUNNING@{RUNNING}}}\mbox{\Hypertarget{group__model_gga736a770455f42dc69910e2687d533b55a1061be6c3fb88d32829cba6f6b2be304}\label{group__model_gga736a770455f42dc69910e2687d533b55a1061be6c3fb88d32829cba6f6b2be304}} 
+RUNNING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXIT@{EXIT}!Model@{Model}}\index{Model@{Model}!EXIT@{EXIT}}}\mbox{\Hypertarget{group__model_gga736a770455f42dc69910e2687d533b55a7a10b5d68d31711288e1fe0fa17dbf4f}\label{group__model_gga736a770455f42dc69910e2687d533b55a7a10b5d68d31711288e1fe0fa17dbf4f}} 
+EXIT&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__model_ga50af89fcbe8ccc22f6b6ea5f476cfdc9}\label{group__model_ga50af89fcbe8ccc22f6b6ea5f476cfdc9}} 
+\index{Model@{Model}!GestureState@{GestureState}}
+\index{GestureState@{GestureState}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{GestureState}{GestureState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__model_ga50af89fcbe8ccc22f6b6ea5f476cfdc9}{Gesture\+State}}}
+
+
+
+Enumerates the possible states of the swipe-\/right gesture. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GESTURE\_ZERO@{GESTURE\_ZERO}!Model@{Model}}\index{Model@{Model}!GESTURE\_ZERO@{GESTURE\_ZERO}}}\mbox{\Hypertarget{group__model_gga50af89fcbe8ccc22f6b6ea5f476cfdc9aebc0c6349575a377dd2f19f82af72da4}\label{group__model_gga50af89fcbe8ccc22f6b6ea5f476cfdc9aebc0c6349575a377dd2f19f82af72da4}} 
+GESTURE\+\_\+\+ZERO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GESTURE\_LB@{GESTURE\_LB}!Model@{Model}}\index{Model@{Model}!GESTURE\_LB@{GESTURE\_LB}}}\mbox{\Hypertarget{group__model_gga50af89fcbe8ccc22f6b6ea5f476cfdc9a0808bd48f74c40b9db7f21c5bd12e1f4}\label{group__model_gga50af89fcbe8ccc22f6b6ea5f476cfdc9a0808bd48f74c40b9db7f21c5bd12e1f4}} 
+GESTURE\+\_\+\+LB&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__model_gab3c7af4820830f9166ede9e5623c4e73}\label{group__model_gab3c7af4820830f9166ede9e5623c4e73}} 
+\index{Model@{Model}!Key@{Key}}
+\index{Key@{Key}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Key}{Key}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__model_gab3c7af4820830f9166ede9e5623c4e73}{Key}}}
+
+
+
+Enumerates the Keyboard keys. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE\_KEY@{NONE\_KEY}!Model@{Model}}\index{Model@{Model}!NONE\_KEY@{NONE\_KEY}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2b464f709faf629f08dbc2c4544a7368}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2b464f709faf629f08dbc2c4544a7368}} 
+NONE\+\_\+\+KEY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENTER@{ENTER}!Model@{Model}}\index{Model@{Model}!ENTER@{ENTER}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a951ab68bb8f7daafb78951107080904e}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a951ab68bb8f7daafb78951107080904e}} 
+ENTER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!Model@{Model}}\index{Model@{Model}!A@{A}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a42a4ade1acd55a49164099104990e09f}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a42a4ade1acd55a49164099104990e09f}} 
+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!Model@{Model}}\index{Model@{Model}!B@{B}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a3f2a77ecd272aa6d6b5902faa5e5fc68}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a3f2a77ecd272aa6d6b5902faa5e5fc68}} 
+B&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C@{C}!Model@{Model}}\index{Model@{Model}!C@{C}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a739ce3f516592d245d16fd8a3893472c}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a739ce3f516592d245d16fd8a3893472c}} 
+C&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D@{D}!Model@{Model}}\index{Model@{Model}!D@{D}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a77a6b11f9898c052926f1d49765861e8}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a77a6b11f9898c052926f1d49765861e8}} 
+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E@{E}!Model@{Model}}\index{Model@{Model}!E@{E}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73ab199e021998d49b1f09338d8b9b18ecb}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73ab199e021998d49b1f09338d8b9b18ecb}} 
+E&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F@{F}!Model@{Model}}\index{Model@{Model}!F@{F}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73af382a63cc3d6491bf26b59e66f46826d}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73af382a63cc3d6491bf26b59e66f46826d}} 
+F&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G@{G}!Model@{Model}}\index{Model@{Model}!G@{G}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2fe993340f6abb2234e543cd427df70b}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2fe993340f6abb2234e543cd427df70b}} 
+G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H@{H}!Model@{Model}}\index{Model@{Model}!H@{H}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a5008b1179f399a2273fd3f6a7fc3b292}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a5008b1179f399a2273fd3f6a7fc3b292}} 
+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I@{I}!Model@{Model}}\index{Model@{Model}!I@{I}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73ad091b8e376f7cf432dc367e1eda65e85}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73ad091b8e376f7cf432dc367e1eda65e85}} 
+I&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{J@{J}!Model@{Model}}\index{Model@{Model}!J@{J}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a03605500b0c55f3d95874e8edfcf4e30}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a03605500b0c55f3d95874e8edfcf4e30}} 
+J&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K@{K}!Model@{Model}}\index{Model@{Model}!K@{K}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a660a38111995acbeb2820648e82f0d8c}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a660a38111995acbeb2820648e82f0d8c}} 
+K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L@{L}!Model@{Model}}\index{Model@{Model}!L@{L}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73aef31cc6fe9479955961311ee18ac205f}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73aef31cc6fe9479955961311ee18ac205f}} 
+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M@{M}!Model@{Model}}\index{Model@{Model}!M@{M}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a51ca6c63d97347ee58cc7da59ab6994b}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a51ca6c63d97347ee58cc7da59ab6994b}} 
+M&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N@{N}!Model@{Model}}\index{Model@{Model}!N@{N}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2c63acbe79d9f41ba6bb7766e9c37702}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2c63acbe79d9f41ba6bb7766e9c37702}} 
+N&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O@{O}!Model@{Model}}\index{Model@{Model}!O@{O}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73af4b8b7698dfedf5562a7db2bdb07010a}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73af4b8b7698dfedf5562a7db2bdb07010a}} 
+O&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P@{P}!Model@{Model}}\index{Model@{Model}!P@{P}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a82f05f38f6a17b117cdd2b83227912c6}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a82f05f38f6a17b117cdd2b83227912c6}} 
+P&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Q@{Q}!Model@{Model}}\index{Model@{Model}!Q@{Q}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73aa53ab217f1572250a530c8c2b3c820cf}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73aa53ab217f1572250a530c8c2b3c820cf}} 
+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R@{R}!Model@{Model}}\index{Model@{Model}!R@{R}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a1784b1a3d7cbd43c45ff82c72d05e4ae}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a1784b1a3d7cbd43c45ff82c72d05e4ae}} 
+R&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S@{S}!Model@{Model}}\index{Model@{Model}!S@{S}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73af1ce01387d2348f8b858721a7db81670}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73af1ce01387d2348f8b858721a7db81670}} 
+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T@{T}!Model@{Model}}\index{Model@{Model}!T@{T}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a21f40778b7db9343a6ca75ec2c41ccce}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a21f40778b7db9343a6ca75ec2c41ccce}} 
+T&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U@{U}!Model@{Model}}\index{Model@{Model}!U@{U}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73ac461e84f27bbb236874e1011cd66031f}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73ac461e84f27bbb236874e1011cd66031f}} 
+U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V@{V}!Model@{Model}}\index{Model@{Model}!V@{V}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a28f41f1144eee94834387e9a6a088bc1}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a28f41f1144eee94834387e9a6a088bc1}} 
+V&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W@{W}!Model@{Model}}\index{Model@{Model}!W@{W}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73ab722ceeb601c72cd78fbd35f3581fdf7}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73ab722ceeb601c72cd78fbd35f3581fdf7}} 
+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!Model@{Model}}\index{Model@{Model}!X@{X}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a58833a3110c570fb05130d40c365d1e4}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a58833a3110c570fb05130d40c365d1e4}} 
+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y@{Y}!Model@{Model}}\index{Model@{Model}!Y@{Y}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a5596231eabd6cf29050967d5ac83ad84}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a5596231eabd6cf29050967d5ac83ad84}} 
+Y&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Z@{Z}!Model@{Model}}\index{Model@{Model}!Z@{Z}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73aa70478ce277ffc322f8e1e3418e07355}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73aa70478ce277ffc322f8e1e3418e07355}} 
+Z&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMA@{COMMA}!Model@{Model}}\index{Model@{Model}!COMMA@{COMMA}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73af81277bcd86412fe04bb68718ea09392}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73af81277bcd86412fe04bb68718ea09392}} 
+COMMA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PERIOD@{PERIOD}!Model@{Model}}\index{Model@{Model}!PERIOD@{PERIOD}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73af65a8a7e47ca896d414e6c098e100038}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73af65a8a7e47ca896d414e6c098e100038}} 
+PERIOD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COLON@{COLON}!Model@{Model}}\index{Model@{Model}!COLON@{COLON}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a29cf94637337909c3813bb50d6e9b3ee}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a29cf94637337909c3813bb50d6e9b3ee}} 
+COLON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXCLAMATION@{EXCLAMATION}!Model@{Model}}\index{Model@{Model}!EXCLAMATION@{EXCLAMATION}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73aba3ab86538e7779c202fbdbd5318ad4e}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73aba3ab86538e7779c202fbdbd5318ad4e}} 
+EXCLAMATION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT\_PARENTHESIS@{RIGHT\_PARENTHESIS}!Model@{Model}}\index{Model@{Model}!RIGHT\_PARENTHESIS@{RIGHT\_PARENTHESIS}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a6069687c1576cf9757e02f44e9060ed2}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a6069687c1576cf9757e02f44e9060ed2}} 
+RIGHT\+\_\+\+PARENTHESIS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ZERO@{ZERO}!Model@{Model}}\index{Model@{Model}!ZERO@{ZERO}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73ae117e3533122c80b262257b49b21cddf}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73ae117e3533122c80b262257b49b21cddf}} 
+ZERO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE@{ONE}!Model@{Model}}\index{Model@{Model}!ONE@{ONE}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a7a725f13af144bdef532d0389ba75e0d}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a7a725f13af144bdef532d0389ba75e0d}} 
+ONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TWO@{TWO}!Model@{Model}}\index{Model@{Model}!TWO@{TWO}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a0e793500a63ffa575b9b712ca3bc9851}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a0e793500a63ffa575b9b712ca3bc9851}} 
+TWO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{THREE@{THREE}!Model@{Model}}\index{Model@{Model}!THREE@{THREE}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a1251fbf93888ad32fe0ae54d49bcef17}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a1251fbf93888ad32fe0ae54d49bcef17}} 
+THREE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FOUR@{FOUR}!Model@{Model}}\index{Model@{Model}!FOUR@{FOUR}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a23d7ef5341c6930d19b2ecbb997977cf}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a23d7ef5341c6930d19b2ecbb997977cf}} 
+FOUR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FIVE@{FIVE}!Model@{Model}}\index{Model@{Model}!FIVE@{FIVE}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a3a40d11d30db182ab8f9846aa9458bec}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a3a40d11d30db182ab8f9846aa9458bec}} 
+FIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SIX@{SIX}!Model@{Model}}\index{Model@{Model}!SIX@{SIX}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73aadffddd32c3e7497e32cd7e430c9c106}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73aadffddd32c3e7497e32cd7e430c9c106}} 
+SIX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SEVEN@{SEVEN}!Model@{Model}}\index{Model@{Model}!SEVEN@{SEVEN}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a9a193f3e84352f3fbbe44f8d275a820c}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a9a193f3e84352f3fbbe44f8d275a820c}} 
+SEVEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EIGHT@{EIGHT}!Model@{Model}}\index{Model@{Model}!EIGHT@{EIGHT}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2fd39b67b424f4ea3b4c11ce3195ab8b}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73a2fd39b67b424f4ea3b4c11ce3195ab8b}} 
+EIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NINE@{NINE}!Model@{Model}}\index{Model@{Model}!NINE@{NINE}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73aea09d09b793ccc4a4b5983368d18a4ab}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73aea09d09b793ccc4a4b5983368d18a4ab}} 
+NINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BACK@{BACK}!Model@{Model}}\index{Model@{Model}!BACK@{BACK}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73ac921ff2cfc571c1d19b0485d7f6926ee}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73ac921ff2cfc571c1d19b0485d7f6926ee}} 
+BACK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESC@{ESC}!Model@{Model}}\index{Model@{Model}!ESC@{ESC}}}\mbox{\Hypertarget{group__model_ggab3c7af4820830f9166ede9e5623c4e73af5297152557c7da396243000ca240e89}\label{group__model_ggab3c7af4820830f9166ede9e5623c4e73af5297152557c7da396243000ca240e89}} 
+ESC&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__model_ga884f66aebb13ef5e5e37ed3247d493e6}\label{group__model_ga884f66aebb13ef5e5e37ed3247d493e6}} 
+\index{Model@{Model}!char\_to\_key@{char\_to\_key}}
+\index{char\_to\_key@{char\_to\_key}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{char\_to\_key()}{char\_to\_key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__model_gab3c7af4820830f9166ede9e5623c4e73}{Key}} char\+\_\+to\+\_\+key (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Gets a key based on a char. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga884f66aebb13ef5e5e37ed3247d493e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga863baa087fc06f01a6a564bd309505ce}\label{group__model_ga863baa087fc06f01a6a564bd309505ce}} 
+\index{Model@{Model}!checkActions@{checkActions}}
+\index{checkActions@{checkActions}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{checkActions()}{checkActions()}}
+{\footnotesize\ttfamily void check\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks the actions to be taken based on the mouse data. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga863baa087fc06f01a6a564bd309505ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga863baa087fc06f01a6a564bd309505ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gab928d80e53e1b9328939c6d548717c4d}\label{group__model_gab928d80e53e1b9328939c6d548717c4d}} 
+\index{Model@{Model}!checkGesture@{checkGesture}}
+\index{checkGesture@{checkGesture}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{checkGesture()}{checkGesture()}}
+{\footnotesize\ttfamily void check\+Gesture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the swipe-\/right gesture status. 
+
+Checks if the gesture to fill the current word is correct. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gab928d80e53e1b9328939c6d548717c4d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gab928d80e53e1b9328939c6d548717c4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga8fdbc6c7bfca3ef4a8800a3cdc19d932}\label{group__model_ga8fdbc6c7bfca3ef4a8800a3cdc19d932}} 
+\index{Model@{Model}!destroy\_sprites@{destroy\_sprites}}
+\index{destroy\_sprites@{destroy\_sprites}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprites()}{destroy\_sprites()}}
+{\footnotesize\ttfamily void destroy\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Free the memory allocated for the sprites. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{group__model_ga8fdbc6c7bfca3ef4a8800a3cdc19d932_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga8fdbc6c7bfca3ef4a8800a3cdc19d932_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga1bf6ea5df1424ec5b9356282463ae941}\label{group__model_ga1bf6ea5df1424ec5b9356282463ae941}} 
+\index{Model@{Model}!destroy\_stats@{destroy\_stats}}
+\index{destroy\_stats@{destroy\_stats}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{destroy\_stats()}{destroy\_stats()}}
+{\footnotesize\ttfamily void destroy\+\_\+stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Frees the memory allocated for the statistics. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga1bf6ea5df1424ec5b9356282463ae941_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga2d136bf294a594a3f1360213197e0450}\label{group__model_ga2d136bf294a594a3f1360213197e0450}} 
+\index{Model@{Model}!destroy\_test@{destroy\_test}}
+\index{destroy\_test@{destroy\_test}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{destroy\_test()}{destroy\_test()}}
+{\footnotesize\ttfamily void destroy\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Frees the memory allocated for the typing test. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga2d136bf294a594a3f1360213197e0450_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gad48d10ec2a1703d551dc554184cf24ca}\label{group__model_gad48d10ec2a1703d551dc554184cf24ca}} 
+\index{Model@{Model}!fill\_current\_word@{fill\_current\_word}}
+\index{fill\_current\_word@{fill\_current\_word}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{fill\_current\_word()}{fill\_current\_word()}}
+{\footnotesize\ttfamily void fill\+\_\+current\+\_\+word (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fills correctly the remaining letters of the current word. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gad48d10ec2a1703d551dc554184cf24ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gad48d10ec2a1703d551dc554184cf24ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gabf69e0a27419eda374e9be68a9a18436}\label{group__model_gabf69e0a27419eda374e9be68a9a18436}} 
+\index{Model@{Model}!handle\_delete\_key@{handle\_delete\_key}}
+\index{handle\_delete\_key@{handle\_delete\_key}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{handle\_delete\_key()}{handle\_delete\_key()}}
+{\footnotesize\ttfamily void handle\+\_\+delete\+\_\+key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$}]{test }\end{DoxyParamCaption})}
+
+
+
+Goes back to the previous letter and resets the current letter status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & the typing test \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gabf69e0a27419eda374e9be68a9a18436_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gabf69e0a27419eda374e9be68a9a18436_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gabdb87c8ab72e44c6a3114d8734f475f0}\label{group__model_gabdb87c8ab72e44c6a3114d8734f475f0}} 
+\index{Model@{Model}!handle\_space\_key@{handle\_space\_key}}
+\index{handle\_space\_key@{handle\_space\_key}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{handle\_space\_key()}{handle\_space\_key()}}
+{\footnotesize\ttfamily void handle\+\_\+space\+\_\+key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$}]{test }\end{DoxyParamCaption})}
+
+
+
+Checks if the current word is correct and advances to the next word, also updates the statistics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & the typing test \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gabdb87c8ab72e44c6a3114d8734f475f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gabdb87c8ab72e44c6a3114d8734f475f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gaacf12f8cd193c09b06a729d28f14faae}\label{group__model_gaacf12f8cd193c09b06a729d28f14faae}} 
+\index{Model@{Model}!initialize\_high\_scores@{initialize\_high\_scores}}
+\index{initialize\_high\_scores@{initialize\_high\_scores}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{initialize\_high\_scores()}{initialize\_high\_scores()}}
+{\footnotesize\ttfamily void initialize\+\_\+high\+\_\+scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gaacf12f8cd193c09b06a729d28f14faae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gab589e30806358da5be646f623dbb1df0}\label{group__model_gab589e30806358da5be646f623dbb1df0}} 
+\index{Model@{Model}!initialize\_key\_maps@{initialize\_key\_maps}}
+\index{initialize\_key\_maps@{initialize\_key\_maps}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{initialize\_key\_maps()}{initialize\_key\_maps()}}
+{\footnotesize\ttfamily void initialize\+\_\+key\+\_\+maps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the key maps. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gab589e30806358da5be646f623dbb1df0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gaaf023ed701a3cbcdfbb1ce03f92f63e4}\label{group__model_gaaf023ed701a3cbcdfbb1ce03f92f63e4}} 
+\index{Model@{Model}!initialize\_key\_sprite\_map@{initialize\_key\_sprite\_map}}
+\index{initialize\_key\_sprite\_map@{initialize\_key\_sprite\_map}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{initialize\_key\_sprite\_map()}{initialize\_key\_sprite\_map()}}
+{\footnotesize\ttfamily void initialize\+\_\+key\+\_\+sprite\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the key sprite map. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gaaf023ed701a3cbcdfbb1ce03f92f63e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga5347e85e2c2ea95aa825425bb336f148}\label{group__model_ga5347e85e2c2ea95aa825425bb336f148}} 
+\index{Model@{Model}!initialize\_sprites@{initialize\_sprites}}
+\index{initialize\_sprites@{initialize\_sprites}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{initialize\_sprites()}{initialize\_sprites()}}
+{\footnotesize\ttfamily void initialize\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the sprites. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{group__model_ga5347e85e2c2ea95aa825425bb336f148_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga5347e85e2c2ea95aa825425bb336f148_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gab9c54d11895f3cb638794d2d645c61bf}\label{group__model_gab9c54d11895f3cb638794d2d645c61bf}} 
+\index{Model@{Model}!initializeTest@{initializeTest}}
+\index{initializeTest@{initializeTest}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{initializeTest()}{initializeTest()}}
+{\footnotesize\ttfamily void initialize\+Test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$$\ast$}]{test\+Ptr,  }\item[{char $\ast$}]{word\+Pool\mbox{[}$\,$\mbox{]},  }\item[{int}]{pool\+Size,  }\item[{int}]{word\+Count }\end{DoxyParamCaption})}
+
+
+
+Initializes the test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Ptr} & the pointer to the test \\
+\hline
+{\em word\+Pool} & the pool of words \\
+\hline
+{\em pool\+Size} & the size of the pool \\
+\hline
+{\em word\+Count} & the number of words \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gab9c54d11895f3cb638794d2d645c61bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gaf4ac0fcf9c7cabe4beb4eac81d78b8b6}\label{group__model_gaf4ac0fcf9c7cabe4beb4eac81d78b8b6}} 
+\index{Model@{Model}!key\_handler@{key\_handler}}
+\index{key\_handler@{key\_handler}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{key\_handler()}{key\_handler()}}
+{\footnotesize\ttfamily void key\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the keyboard interrupts. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gaf4ac0fcf9c7cabe4beb4eac81d78b8b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{group__model_gaf4ac0fcf9c7cabe4beb4eac81d78b8b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gadaafd25c8a461deddb18152bd448d5f6}\label{group__model_gadaafd25c8a461deddb18152bd448d5f6}} 
+\index{Model@{Model}!load\_high\_scores@{load\_high\_scores}}
+\index{load\_high\_scores@{load\_high\_scores}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{load\_high\_scores()}{load\_high\_scores()}}
+{\footnotesize\ttfamily void load\+\_\+high\+\_\+scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{group__model_gadaafd25c8a461deddb18152bd448d5f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gadaafd25c8a461deddb18152bd448d5f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga6909d155b4129f9628a90e2bca468276}\label{group__model_ga6909d155b4129f9628a90e2bca468276}} 
+\index{Model@{Model}!load\_new\_word@{load\_new\_word}}
+\index{load\_new\_word@{load\_new\_word}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{load\_new\_word()}{load\_new\_word()}}
+{\footnotesize\ttfamily void load\+\_\+new\+\_\+word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$}]{test,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Loads new words to the test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & the typing test \\
+\hline
+{\em index} & the index where to load the word \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga6909d155b4129f9628a90e2bca468276_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga2e5b5f1e5dd9806b0a18e19fccb7e850}\label{group__model_ga2e5b5f1e5dd9806b0a18e19fccb7e850}} 
+\index{Model@{Model}!offset\_handler@{offset\_handler}}
+\index{offset\_handler@{offset\_handler}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{offset\_handler()}{offset\_handler()}}
+{\footnotesize\ttfamily int offset\+\_\+handler (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{end\+\_\+x }\end{DoxyParamCaption})}
+
+
+
+Handles the offset for drawing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the offset to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new offset 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga2e5b5f1e5dd9806b0a18e19fccb7e850_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga2ba2c43854b2302eaaf76366ee10d159}\label{group__model_ga2ba2c43854b2302eaaf76366ee10d159}} 
+\index{Model@{Model}!pressed\_button@{pressed\_button}}
+\index{pressed\_button@{pressed\_button}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{pressed\_button()}{pressed\_button()}}
+{\footnotesize\ttfamily int pressed\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{button\+\_\+sprite }\end{DoxyParamCaption})}
+
+
+
+Checks if the mouse sprite is over a button and if left button is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+\_\+sprite} & the sprite of the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the button was pressed, 0 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga2ba2c43854b2302eaaf76366ee10d159_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gaee5607d98315faa768966764fc2f856c}\label{group__model_gaee5607d98315faa768966764fc2f856c}} 
+\index{Model@{Model}!process\_key@{process\_key}}
+\index{process\_key@{process\_key}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{process\_key()}{process\_key()}}
+{\footnotesize\ttfamily void process\+\_\+key (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{\mbox{\hyperlink{group__model_gab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key,  }\item[{\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$}]{test,  }\item[{\mbox{\hyperlink{group__model_ga7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Processes the key pressed, updating the letter status and the current input, and also the statistics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the character pressed \\
+\hline
+{\em key} & the key pressed \\
+\hline
+{\em test} & the typing test \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gaee5607d98315faa768966764fc2f856c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gaee5607d98315faa768966764fc2f856c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gac32ae0a5328c6612261ec59de33d922e}\label{group__model_gac32ae0a5328c6612261ec59de33d922e}} 
+\index{Model@{Model}!reset\_offset@{reset\_offset}}
+\index{reset\_offset@{reset\_offset}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{reset\_offset()}{reset\_offset()}}
+{\footnotesize\ttfamily void reset\+\_\+offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets offset to starting of box. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gac32ae0a5328c6612261ec59de33d922e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga4cf06361fe03ece201dc59d5abd4369d}\label{group__model_ga4cf06361fe03ece201dc59d5abd4369d}} 
+\index{Model@{Model}!save\_high\_scores@{save\_high\_scores}}
+\index{save\_high\_scores@{save\_high\_scores}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{save\_high\_scores()}{save\_high\_scores()}}
+{\footnotesize\ttfamily void save\+\_\+high\+\_\+scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga4cf06361fe03ece201dc59d5abd4369d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gacc64a6dd2c789a5483468b4fd413de3b}\label{group__model_gacc64a6dd2c789a5483468b4fd413de3b}} 
+\index{Model@{Model}!setGameState@{setGameState}}
+\index{setGameState@{setGameState}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setGameState()}{setGameState()}}
+{\footnotesize\ttfamily void set\+Game\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__model_ga7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Updates current\+State and game\+State\+Change. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gacc64a6dd2c789a5483468b4fd413de3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gacc64a6dd2c789a5483468b4fd413de3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga6fd340363e321476815273c4bb17b211}\label{group__model_ga6fd340363e321476815273c4bb17b211}} 
+\index{Model@{Model}!shift\_words\_up@{shift\_words\_up}}
+\index{shift\_words\_up@{shift\_words\_up}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{shift\_words\_up()}{shift\_words\_up()}}
+{\footnotesize\ttfamily void shift\+\_\+words\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTypingTest}{Typing\+Test}} $\ast$}]{test }\end{DoxyParamCaption})}
+
+
+
+Moves the penultimate line to first line, last line to second and loads new words. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & the typing test \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga6fd340363e321476815273c4bb17b211_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga6fd340363e321476815273c4bb17b211_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gae1e1127622ac454d7afeb895dd1a2bb6}\label{group__model_gae1e1127622ac454d7afeb895dd1a2bb6}} 
+\index{Model@{Model}!startAnimation@{startAnimation}}
+\index{startAnimation@{startAnimation}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{startAnimation()}{startAnimation()}}
+{\footnotesize\ttfamily void start\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAnimation}{Animation}} $\ast$}]{animation }\end{DoxyParamCaption})}
+
+
+
+Starts the animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation} & the animation to be started \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gae1e1127622ac454d7afeb895dd1a2bb6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga12e57a65e724c988691dc9818207895c}\label{group__model_ga12e57a65e724c988691dc9818207895c}} 
+\index{Model@{Model}!update\_high\_scores@{update\_high\_scores}}
+\index{update\_high\_scores@{update\_high\_scores}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{update\_high\_scores()}{update\_high\_scores()}}
+{\footnotesize\ttfamily void update\+\_\+high\+\_\+scores (\begin{DoxyParamCaption}\item[{int}]{wpm,  }\item[{\mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}}}]{achieved\+\_\+time }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{group__model_ga12e57a65e724c988691dc9818207895c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga12e57a65e724c988691dc9818207895c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga83b1742f41d6e701033e0dd6f113c411}\label{group__model_ga83b1742f41d6e701033e0dd6f113c411}} 
+\index{Model@{Model}!update\_keyboard@{update\_keyboard}}
+\index{update\_keyboard@{update\_keyboard}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{update\_keyboard()}{update\_keyboard()}}
+{\footnotesize\ttfamily void update\+\_\+keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Assigns tasks to the respective keys. 
+
+\mbox{\Hypertarget{group__model_gab5fa7e7da1851578789c26ec9d71448b}\label{group__model_gab5fa7e7da1851578789c26ec9d71448b}} 
+\index{Model@{Model}!update\_mouse@{update\_mouse}}
+\index{update\_mouse@{update\_mouse}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{update\_mouse()}{update\_mouse()}}
+{\footnotesize\ttfamily void update\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sync mouse bytes and calls update\+\_\+mouse\+\_\+date. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gab5fa7e7da1851578789c26ec9d71448b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{group__model_gab5fa7e7da1851578789c26ec9d71448b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_ga3dbbef8766f0ce676f34b8b4f1bf3485}\label{group__model_ga3dbbef8766f0ce676f34b8b4f1bf3485}} 
+\index{Model@{Model}!update\_timer@{update\_timer}}
+\index{update\_timer@{update\_timer}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{update\_timer()}{update\_timer()}}
+{\footnotesize\ttfamily void update\+\_\+timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+handles the timer interrupts 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_ga3dbbef8766f0ce676f34b8b4f1bf3485_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{group__model_ga3dbbef8766f0ce676f34b8b4f1bf3485_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__model_gacd34d1905fe143a9a315a18800d3f2a6}\label{group__model_gacd34d1905fe143a9a315a18800d3f2a6}} 
+\index{Model@{Model}!updateAnimation@{updateAnimation}}
+\index{updateAnimation@{updateAnimation}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{updateAnimation()}{updateAnimation()}}
+{\footnotesize\ttfamily void update\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAnimation}{Animation}} $\ast$}]{animation }\end{DoxyParamCaption})}
+
+
+
+Updates the frame of the animation and respective active status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation} & the animation to be updated \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__model_gacd34d1905fe143a9a315a18800d3f2a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__model_gabe5265fd18fc910e93d9ae73022c3f66}\label{group__model_gabe5265fd18fc910e93d9ae73022c3f66}} 
+\index{Model@{Model}!A\_SPRITE@{A\_SPRITE}}
+\index{A\_SPRITE@{A\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{A\_SPRITE}{A\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ A\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gad72df6d6fee9e649b11c234d4ed8e7cf}\label{group__model_gad72df6d6fee9e649b11c234d4ed8e7cf}} 
+\index{Model@{Model}!achieved\_time@{achieved\_time}}
+\index{achieved\_time@{achieved\_time}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{achieved\_time}{achieved\_time}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}} High\+Score\+::achieved\+\_\+time}
+
+\mbox{\Hypertarget{group__model_ga2b8c825d11b6640e95060823ded1a366}\label{group__model_ga2b8c825d11b6640e95060823ded1a366}} 
+\index{Model@{Model}!B\_SPRITE@{B\_SPRITE}}
+\index{B\_SPRITE@{B\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{B\_SPRITE}{B\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ B\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga317326080572c43d8cbcfcea79e5a4c7}\label{group__model_ga317326080572c43d8cbcfcea79e5a4c7}} 
+\index{Model@{Model}!BACK\_TO\_MENU\_SPRITE@{BACK\_TO\_MENU\_SPRITE}}
+\index{BACK\_TO\_MENU\_SPRITE@{BACK\_TO\_MENU\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{BACK\_TO\_MENU\_SPRITE}{BACK\_TO\_MENU\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ BACK\+\_\+\+TO\+\_\+\+MENU\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gad6b4ce5b1f9d351cfa7b948af2ad5137}\label{group__model_gad6b4ce5b1f9d351cfa7b948af2ad5137}} 
+\index{Model@{Model}!BAMBU\_LEFT\_SPRITE@{BAMBU\_LEFT\_SPRITE}}
+\index{BAMBU\_LEFT\_SPRITE@{BAMBU\_LEFT\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{BAMBU\_LEFT\_SPRITE}{BAMBU\_LEFT\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ BAMBU\+\_\+\+LEFT\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga02c52ea6c682bf40dfb05e464a3cdd40}\label{group__model_ga02c52ea6c682bf40dfb05e464a3cdd40}} 
+\index{Model@{Model}!BAMBU\_RIGHT\_SPRITE@{BAMBU\_RIGHT\_SPRITE}}
+\index{BAMBU\_RIGHT\_SPRITE@{BAMBU\_RIGHT\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{BAMBU\_RIGHT\_SPRITE}{BAMBU\_RIGHT\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ BAMBU\+\_\+\+RIGHT\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga4db9d1b0380cf54e0fd1c5d68e6b270e}\label{group__model_ga4db9d1b0380cf54e0fd1c5d68e6b270e}} 
+\index{Model@{Model}!C\_SPRITE@{C\_SPRITE}}
+\index{C\_SPRITE@{C\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{C\_SPRITE}{C\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ C\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga69866a4d8368d59457a9ec9601cc62f4}\label{group__model_ga69866a4d8368d59457a9ec9601cc62f4}} 
+\index{Model@{Model}!character@{character}}
+\index{character@{character}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{character}{character}}
+{\footnotesize\ttfamily char Letter\+::character}
+
+\mbox{\Hypertarget{group__model_gac303536db407a9b59b89961e2cb301c9}\label{group__model_gac303536db407a9b59b89961e2cb301c9}} 
+\index{Model@{Model}!COLON\_SPRITE@{COLON\_SPRITE}}
+\index{COLON\_SPRITE@{COLON\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{COLON\_SPRITE}{COLON\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ COLON\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gabce46d123cbfedd6d569ff27e1145f76}\label{group__model_gabce46d123cbfedd6d569ff27e1145f76}} 
+\index{Model@{Model}!COMMA\_SPRITE@{COMMA\_SPRITE}}
+\index{COMMA\_SPRITE@{COMMA\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{COMMA\_SPRITE}{COMMA\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ COMMA\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gada11a3c493737742365f9f4c4e61d27c}\label{group__model_gada11a3c493737742365f9f4c4e61d27c}} 
+\index{Model@{Model}!correctLetters@{correctLetters}}
+\index{correctLetters@{correctLetters}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{correctLetters}{correctLetters}}
+{\footnotesize\ttfamily int Statistics\+::correct\+Letters}
+
+\mbox{\Hypertarget{group__model_gada9c466adc9f1bb4c733d43c324adcc7}\label{group__model_gada9c466adc9f1bb4c733d43c324adcc7}} 
+\index{Model@{Model}!correctWords@{correctWords}}
+\index{correctWords@{correctWords}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{correctWords}{correctWords}}
+{\footnotesize\ttfamily int Statistics\+::correct\+Words}
+
+\mbox{\Hypertarget{group__model_gae171bb471e09bdfccec1b496974b8830}\label{group__model_gae171bb471e09bdfccec1b496974b8830}} 
+\index{Model@{Model}!currentInput@{currentInput}}
+\index{currentInput@{currentInput}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{currentInput}{currentInput}}
+{\footnotesize\ttfamily char Typing\+Test\+::current\+Input\mbox{[}\mbox{\hyperlink{model_8h_aec7b4994021c554c1761ea31d016b680}{MAX\+\_\+\+WORD\+\_\+\+LENGTH}}\mbox{]}}
+
+\mbox{\Hypertarget{group__model_ga2b7623aed0ab70408f9798932fe83cba}\label{group__model_ga2b7623aed0ab70408f9798932fe83cba}} 
+\index{Model@{Model}!currentInputIndex@{currentInputIndex}}
+\index{currentInputIndex@{currentInputIndex}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{currentInputIndex}{currentInputIndex}}
+{\footnotesize\ttfamily int Typing\+Test\+::current\+Input\+Index}
+
+\mbox{\Hypertarget{group__model_ga4de63fe9efbf29785f9ec4e4ba1a8005}\label{group__model_ga4de63fe9efbf29785f9ec4e4ba1a8005}} 
+\index{Model@{Model}!currentWordIndex@{currentWordIndex}}
+\index{currentWordIndex@{currentWordIndex}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{currentWordIndex}{currentWordIndex}}
+{\footnotesize\ttfamily int Typing\+Test\+::current\+Word\+Index}
+
+\mbox{\Hypertarget{group__model_ga1de2a84a9f6625a6314ba51649edc495}\label{group__model_ga1de2a84a9f6625a6314ba51649edc495}} 
+\index{Model@{Model}!CURSOR\_SPRITE@{CURSOR\_SPRITE}}
+\index{CURSOR\_SPRITE@{CURSOR\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{CURSOR\_SPRITE}{CURSOR\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ CURSOR\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gaa4575e70c988b127ad403d7091734eec}\label{group__model_gaa4575e70c988b127ad403d7091734eec}} 
+\index{Model@{Model}!D\_SPRITE@{D\_SPRITE}}
+\index{D\_SPRITE@{D\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{D\_SPRITE}{D\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ D\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gabba4b69989d6570d3ccac51671225d97}\label{group__model_gabba4b69989d6570d3ccac51671225d97}} 
+\index{Model@{Model}!E\_SPRITE@{E\_SPRITE}}
+\index{E\_SPRITE@{E\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{E\_SPRITE}{E\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ E\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gaab72232ad48cf00d27b374099f99f11c}\label{group__model_gaab72232ad48cf00d27b374099f99f11c}} 
+\index{Model@{Model}!EIGHT\_SPRITE@{EIGHT\_SPRITE}}
+\index{EIGHT\_SPRITE@{EIGHT\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{EIGHT\_SPRITE}{EIGHT\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ EIGHT\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga08d1774382993825cf4bce79c435a923}\label{group__model_ga08d1774382993825cf4bce79c435a923}} 
+\index{Model@{Model}!EXCLAMATION\_SPRITE@{EXCLAMATION\_SPRITE}}
+\index{EXCLAMATION\_SPRITE@{EXCLAMATION\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{EXCLAMATION\_SPRITE}{EXCLAMATION\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ EXCLAMATION\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gacc454239f78c398218f63264088dc24d}\label{group__model_gacc454239f78c398218f63264088dc24d}} 
+\index{Model@{Model}!F\_SPRITE@{F\_SPRITE}}
+\index{F\_SPRITE@{F\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{F\_SPRITE}{F\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ F\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga13e549f45fd809dae5a8fb8e5962034a}\label{group__model_ga13e549f45fd809dae5a8fb8e5962034a}} 
+\index{Model@{Model}!FIVE\_SPRITE@{FIVE\_SPRITE}}
+\index{FIVE\_SPRITE@{FIVE\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{FIVE\_SPRITE}{FIVE\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ FIVE\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga1da8c002e7012c11da199004a558b33b}\label{group__model_ga1da8c002e7012c11da199004a558b33b}} 
+\index{Model@{Model}!FOUR\_SPRITE@{FOUR\_SPRITE}}
+\index{FOUR\_SPRITE@{FOUR\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{FOUR\_SPRITE}{FOUR\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ FOUR\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gaac26bccfc81d3eda495afa237c90c83d}\label{group__model_gaac26bccfc81d3eda495afa237c90c83d}} 
+\index{Model@{Model}!G\_SPRITE@{G\_SPRITE}}
+\index{G\_SPRITE@{G\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{G\_SPRITE}{G\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ G\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gaa66700370c4dabc955de9ff2c0f831f4}\label{group__model_gaa66700370c4dabc955de9ff2c0f831f4}} 
+\index{Model@{Model}!H\_SPRITE@{H\_SPRITE}}
+\index{H\_SPRITE@{H\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{H\_SPRITE}{H\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ H\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga03160397de56f9e70513ee5e9c3dca2d}\label{group__model_ga03160397de56f9e70513ee5e9c3dca2d}} 
+\index{Model@{Model}!HAPPY\_1\_SPRITE@{HAPPY\_1\_SPRITE}}
+\index{HAPPY\_1\_SPRITE@{HAPPY\_1\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{HAPPY\_1\_SPRITE}{HAPPY\_1\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ HAPPY\+\_\+1\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga7dce761f435f4393b697a0d223b0b6d9}\label{group__model_ga7dce761f435f4393b697a0d223b0b6d9}} 
+\index{Model@{Model}!HAPPY\_2\_SPRITE@{HAPPY\_2\_SPRITE}}
+\index{HAPPY\_2\_SPRITE@{HAPPY\_2\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{HAPPY\_2\_SPRITE}{HAPPY\_2\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ HAPPY\+\_\+2\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga4241d89eb6507b9d08346f35d6dcabda}\label{group__model_ga4241d89eb6507b9d08346f35d6dcabda}} 
+\index{Model@{Model}!HAPPY\_3\_SPRITE@{HAPPY\_3\_SPRITE}}
+\index{HAPPY\_3\_SPRITE@{HAPPY\_3\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{HAPPY\_3\_SPRITE}{HAPPY\_3\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ HAPPY\+\_\+3\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga19db75eb652c628da8f7b4ca38c0cb1e}\label{group__model_ga19db75eb652c628da8f7b4ca38c0cb1e}} 
+\index{Model@{Model}!HAPPY\_4\_SPRITE@{HAPPY\_4\_SPRITE}}
+\index{HAPPY\_4\_SPRITE@{HAPPY\_4\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{HAPPY\_4\_SPRITE}{HAPPY\_4\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ HAPPY\+\_\+4\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gac8898c160c8e439c28dd7af5fddf18ab}\label{group__model_gac8898c160c8e439c28dd7af5fddf18ab}} 
+\index{Model@{Model}!happyAnimation@{happyAnimation}}
+\index{happyAnimation@{happyAnimation}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{happyAnimation}{happyAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAnimation}{Animation}} happy\+Animation}
+
+\mbox{\Hypertarget{group__model_gaa9498b15224d9d596623c7b10f69ddb0}\label{group__model_gaa9498b15224d9d596623c7b10f69ddb0}} 
+\index{Model@{Model}!happyFrames@{happyFrames}}
+\index{happyFrames@{happyFrames}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{happyFrames}{happyFrames}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$$\ast$ happy\+Frames}
+
+\mbox{\Hypertarget{group__model_ga728fa1d24e3546d00f2b0127da4306d5}\label{group__model_ga728fa1d24e3546d00f2b0127da4306d5}} 
+\index{Model@{Model}!height@{height}}
+\index{height@{height}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Caret\+::height}
+
+\mbox{\Hypertarget{group__model_ga428189dcc183af428a597a48e027d55f}\label{group__model_ga428189dcc183af428a597a48e027d55f}} 
+\index{Model@{Model}!highScores@{highScores}}
+\index{highScores@{highScores}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{highScores}{highScores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structHighScore}{High\+Score}} high\+Scores\mbox{[}\mbox{\hyperlink{model_8h_abfe67c432d4cc4227a8125c799c39092}{MAX\+\_\+\+HIGH\+\_\+\+SCORES}}\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{group__model_gac81a07e38cd31ad6726a31c7709efa69}\label{group__model_gac81a07e38cd31ad6726a31c7709efa69}} 
+\index{Model@{Model}!HIGHSCORES\_SPRITE@{HIGHSCORES\_SPRITE}}
+\index{HIGHSCORES\_SPRITE@{HIGHSCORES\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{HIGHSCORES\_SPRITE}{HIGHSCORES\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ HIGHSCORES\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga5afdfa2464a42571896e2303d34cf6c7}\label{group__model_ga5afdfa2464a42571896e2303d34cf6c7}} 
+\index{Model@{Model}!I\_SPRITE@{I\_SPRITE}}
+\index{I\_SPRITE@{I\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{I\_SPRITE}{I\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ I\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga100fc161b1a470ff380751239a5bfd41}\label{group__model_ga100fc161b1a470ff380751239a5bfd41}} 
+\index{Model@{Model}!incorrectLetters@{incorrectLetters}}
+\index{incorrectLetters@{incorrectLetters}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{incorrectLetters}{incorrectLetters}}
+{\footnotesize\ttfamily int Statistics\+::incorrect\+Letters}
+
+\mbox{\Hypertarget{group__model_ga518a5d2b2df30f80ee29d666541b1285}\label{group__model_ga518a5d2b2df30f80ee29d666541b1285}} 
+\index{Model@{Model}!incorrectWords@{incorrectWords}}
+\index{incorrectWords@{incorrectWords}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{incorrectWords}{incorrectWords}}
+{\footnotesize\ttfamily int Statistics\+::incorrect\+Words}
+
+\mbox{\Hypertarget{group__model_ga148bbeefb99ad06006bb2381b6025590}\label{group__model_ga148bbeefb99ad06006bb2381b6025590}} 
+\index{Model@{Model}!INSTRUCTIONS\_SPRITE@{INSTRUCTIONS\_SPRITE}}
+\index{INSTRUCTIONS\_SPRITE@{INSTRUCTIONS\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{INSTRUCTIONS\_SPRITE}{INSTRUCTIONS\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ INSTRUCTIONS\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga50df15b3c41db6d3fc09b1142af9f9b4}\label{group__model_ga50df15b3c41db6d3fc09b1142af9f9b4}} 
+\index{Model@{Model}!J\_SPRITE@{J\_SPRITE}}
+\index{J\_SPRITE@{J\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{J\_SPRITE}{J\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ J\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gaa0d2e3c11774a32053e31d92e4679b17}\label{group__model_gaa0d2e3c11774a32053e31d92e4679b17}} 
+\index{Model@{Model}!K\_SPRITE@{K\_SPRITE}}
+\index{K\_SPRITE@{K\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{K\_SPRITE}{K\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ K\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga4b5832eabdc7c75f19bb6d0c266c6f61}\label{group__model_ga4b5832eabdc7c75f19bb6d0c266c6f61}} 
+\index{Model@{Model}!L\_SPRITE@{L\_SPRITE}}
+\index{L\_SPRITE@{L\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{L\_SPRITE}{L\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ L\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga38bf963dbe85ef39462961086e2954e5}\label{group__model_ga38bf963dbe85ef39462961086e2954e5}} 
+\index{Model@{Model}!length@{length}}
+\index{length@{length}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily int Word\+::length}
+
+\mbox{\Hypertarget{group__model_ga67016cf85d79bb477d1949843914b8b8}\label{group__model_ga67016cf85d79bb477d1949843914b8b8}} 
+\index{Model@{Model}!letters@{letters}}
+\index{letters@{letters}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{letters}{letters}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structLetter}{Letter}} Word\+::letters\mbox{[}\mbox{\hyperlink{model_8h_aec7b4994021c554c1761ea31d016b680}{MAX\+\_\+\+WORD\+\_\+\+LENGTH}}\mbox{]}}
+
+\mbox{\Hypertarget{group__model_gaf44fc19e46965bbbcd22201023e6216c}\label{group__model_gaf44fc19e46965bbbcd22201023e6216c}} 
+\index{Model@{Model}!line@{line}}
+\index{line@{line}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{line}{line}}
+{\footnotesize\ttfamily int Word\+::line}
+
+\mbox{\Hypertarget{group__model_gabe10776f0457cd31cfdaf60fb8d9cdaa}\label{group__model_gabe10776f0457cd31cfdaf60fb8d9cdaa}} 
+\index{Model@{Model}!M\_SPRITE@{M\_SPRITE}}
+\index{M\_SPRITE@{M\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{M\_SPRITE}{M\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ M\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga4303b0b44502cfb32f9bf7b3329f1015}\label{group__model_ga4303b0b44502cfb32f9bf7b3329f1015}} 
+\index{Model@{Model}!MAD\_1\_SPRITE@{MAD\_1\_SPRITE}}
+\index{MAD\_1\_SPRITE@{MAD\_1\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{MAD\_1\_SPRITE}{MAD\_1\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ MAD\+\_\+1\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga709dfe452cc215466d0887240752c901}\label{group__model_ga709dfe452cc215466d0887240752c901}} 
+\index{Model@{Model}!MAD\_2\_SPRITE@{MAD\_2\_SPRITE}}
+\index{MAD\_2\_SPRITE@{MAD\_2\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{MAD\_2\_SPRITE}{MAD\_2\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ MAD\+\_\+2\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gadd1302556ad39104778f827d1fb8b3c2}\label{group__model_gadd1302556ad39104778f827d1fb8b3c2}} 
+\index{Model@{Model}!MAD\_3\_SPRITE@{MAD\_3\_SPRITE}}
+\index{MAD\_3\_SPRITE@{MAD\_3\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{MAD\_3\_SPRITE}{MAD\_3\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ MAD\+\_\+3\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga567bb4ca21794f9f60765574da6f7d1b}\label{group__model_ga567bb4ca21794f9f60765574da6f7d1b}} 
+\index{Model@{Model}!MAD\_4\_SPRITE@{MAD\_4\_SPRITE}}
+\index{MAD\_4\_SPRITE@{MAD\_4\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{MAD\_4\_SPRITE}{MAD\_4\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ MAD\+\_\+4\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga0bb1ffa15b8ed7e9d75852678187e7d3}\label{group__model_ga0bb1ffa15b8ed7e9d75852678187e7d3}} 
+\index{Model@{Model}!madAnimation@{madAnimation}}
+\index{madAnimation@{madAnimation}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{madAnimation}{madAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAnimation}{Animation}} mad\+Animation}
+
+\mbox{\Hypertarget{group__model_ga46ed8fd74ba67970b3d002c3b0a301c3}\label{group__model_ga46ed8fd74ba67970b3d002c3b0a301c3}} 
+\index{Model@{Model}!madFrames@{madFrames}}
+\index{madFrames@{madFrames}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{madFrames}{madFrames}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$$\ast$ mad\+Frames}
+
+\mbox{\Hypertarget{group__model_ga8d5353123a5e178b7da997fe7efbb2c0}\label{group__model_ga8d5353123a5e178b7da997fe7efbb2c0}} 
+\index{Model@{Model}!N\_SPRITE@{N\_SPRITE}}
+\index{N\_SPRITE@{N\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{N\_SPRITE}{N\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ N\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gae26482af15243ae25bdeec7282bdb78a}\label{group__model_gae26482af15243ae25bdeec7282bdb78a}} 
+\index{Model@{Model}!NINE\_SPRITE@{NINE\_SPRITE}}
+\index{NINE\_SPRITE@{NINE\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{NINE\_SPRITE}{NINE\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ NINE\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gacc54695c9daac12ef42c2706773c221a}\label{group__model_gacc54695c9daac12ef42c2706773c221a}} 
+\index{Model@{Model}!number\_of\_lines@{number\_of\_lines}}
+\index{number\_of\_lines@{number\_of\_lines}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{number\_of\_lines}{number\_of\_lines}}
+{\footnotesize\ttfamily int Typing\+Test\+::number\+\_\+of\+\_\+lines}
+
+\mbox{\Hypertarget{group__model_ga9ff1aa6fd9bdebad4e886b519c58c4a6}\label{group__model_ga9ff1aa6fd9bdebad4e886b519c58c4a6}} 
+\index{Model@{Model}!O\_SPRITE@{O\_SPRITE}}
+\index{O\_SPRITE@{O\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{O\_SPRITE}{O\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ O\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gad6a3fe34b381409feae329ee6fa6fe11}\label{group__model_gad6a3fe34b381409feae329ee6fa6fe11}} 
+\index{Model@{Model}!ONE\_SPRITE@{ONE\_SPRITE}}
+\index{ONE\_SPRITE@{ONE\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{ONE\_SPRITE}{ONE\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ ONE\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gac8fd853a8f5ec586f6b974c44e804483}\label{group__model_gac8fd853a8f5ec586f6b974c44e804483}} 
+\index{Model@{Model}!P\_SPRITE@{P\_SPRITE}}
+\index{P\_SPRITE@{P\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{P\_SPRITE}{P\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ P\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gaaf4911db027b22c9c476a4c0c49fd1f1}\label{group__model_gaaf4911db027b22c9c476a4c0c49fd1f1}} 
+\index{Model@{Model}!PANDA\_0\_SPRITE@{PANDA\_0\_SPRITE}}
+\index{PANDA\_0\_SPRITE@{PANDA\_0\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{PANDA\_0\_SPRITE}{PANDA\_0\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ PANDA\+\_\+0\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gae60e1707de2cf006f29dc7e0bfd33533}\label{group__model_gae60e1707de2cf006f29dc7e0bfd33533}} 
+\index{Model@{Model}!PANDA\_SPRITE@{PANDA\_SPRITE}}
+\index{PANDA\_SPRITE@{PANDA\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{PANDA\_SPRITE}{PANDA\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ PANDA\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gae01b20350a84ffe8fb0f776a30ba2457}\label{group__model_gae01b20350a84ffe8fb0f776a30ba2457}} 
+\index{Model@{Model}!PERIOD\_SPRITE@{PERIOD\_SPRITE}}
+\index{PERIOD\_SPRITE@{PERIOD\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{PERIOD\_SPRITE}{PERIOD\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ PERIOD\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga58380c0cb3d548abe11a301f54157154}\label{group__model_ga58380c0cb3d548abe11a301f54157154}} 
+\index{Model@{Model}!PLAY\_AGAIN\_SPRITE@{PLAY\_AGAIN\_SPRITE}}
+\index{PLAY\_AGAIN\_SPRITE@{PLAY\_AGAIN\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{PLAY\_AGAIN\_SPRITE}{PLAY\_AGAIN\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ PLAY\+\_\+\+AGAIN\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gac08b1e1c22793b7a7366b5da427fa615}\label{group__model_gac08b1e1c22793b7a7366b5da427fa615}} 
+\index{Model@{Model}!PLAY\_SPRITE@{PLAY\_SPRITE}}
+\index{PLAY\_SPRITE@{PLAY\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{PLAY\_SPRITE}{PLAY\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ PLAY\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga072ae8142dc5ba8b84b47369719ab6d5}\label{group__model_ga072ae8142dc5ba8b84b47369719ab6d5}} 
+\index{Model@{Model}!Q\_SPRITE@{Q\_SPRITE}}
+\index{Q\_SPRITE@{Q\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Q\_SPRITE}{Q\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ Q\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga0daa33e78bc92dd25e6bbcbba8c04230}\label{group__model_ga0daa33e78bc92dd25e6bbcbba8c04230}} 
+\index{Model@{Model}!R\_SPRITE@{R\_SPRITE}}
+\index{R\_SPRITE@{R\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{R\_SPRITE}{R\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ R\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga4c21d981ef841b43cb0e716aca2b0715}\label{group__model_ga4c21d981ef841b43cb0e716aca2b0715}} 
+\index{Model@{Model}!RIGHT\_PARENTHESIS\_SPRITE@{RIGHT\_PARENTHESIS\_SPRITE}}
+\index{RIGHT\_PARENTHESIS\_SPRITE@{RIGHT\_PARENTHESIS\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{RIGHT\_PARENTHESIS\_SPRITE}{RIGHT\_PARENTHESIS\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ RIGHT\+\_\+\+PARENTHESIS\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga9febb791dd0ce351c2787df705605067}\label{group__model_ga9febb791dd0ce351c2787df705605067}} 
+\index{Model@{Model}!S\_SPRITE@{S\_SPRITE}}
+\index{S\_SPRITE@{S\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{S\_SPRITE}{S\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ S\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga9185f2e1f67bb259ff198c7cec35f5a4}\label{group__model_ga9185f2e1f67bb259ff198c7cec35f5a4}} 
+\index{Model@{Model}!SEVEN\_SPRITE@{SEVEN\_SPRITE}}
+\index{SEVEN\_SPRITE@{SEVEN\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{SEVEN\_SPRITE}{SEVEN\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ SEVEN\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gaa01e23c5cc369a682888fd253a4d5cf9}\label{group__model_gaa01e23c5cc369a682888fd253a4d5cf9}} 
+\index{Model@{Model}!SIX\_SPRITE@{SIX\_SPRITE}}
+\index{SIX\_SPRITE@{SIX\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{SIX\_SPRITE}{SIX\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ SIX\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga015db6cf51ef5b76025bd0a9073dd291}\label{group__model_ga015db6cf51ef5b76025bd0a9073dd291}} 
+\index{Model@{Model}!STAR\_SPRITE@{STAR\_SPRITE}}
+\index{STAR\_SPRITE@{STAR\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{STAR\_SPRITE}{STAR\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ STAR\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gae10bc81b93aad5e5d39be75acd39e0c3}\label{group__model_gae10bc81b93aad5e5d39be75acd39e0c3}} 
+\index{Model@{Model}!status@{status}}
+\index{status@{status}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{status}{status}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Letter\+::status}
+
+\mbox{\Hypertarget{group__model_ga618cb45933f8c9df22fdb55624a47822}\label{group__model_ga618cb45933f8c9df22fdb55624a47822}} 
+\index{Model@{Model}!status@{status}}
+\index{status@{status}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{status}{status}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Word\+::status}
+
+\mbox{\Hypertarget{group__model_gaad1f58c772a50c1def5b8e30f2fd6dfc}\label{group__model_gaad1f58c772a50c1def5b8e30f2fd6dfc}} 
+\index{Model@{Model}!T\_SPRITE@{T\_SPRITE}}
+\index{T\_SPRITE@{T\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{T\_SPRITE}{T\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ T\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga4d5a5017be2537a43b2079073650f9d2}\label{group__model_ga4d5a5017be2537a43b2079073650f9d2}} 
+\index{Model@{Model}!THREE\_SPRITE@{THREE\_SPRITE}}
+\index{THREE\_SPRITE@{THREE\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{THREE\_SPRITE}{THREE\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ THREE\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga20fd3f1327c0026c27c45023612d5276}\label{group__model_ga20fd3f1327c0026c27c45023612d5276}} 
+\index{Model@{Model}!time@{time}}
+\index{time@{time}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily int Statistics\+::time}
+
+\mbox{\Hypertarget{group__model_ga4c34dd228889f35273bd7adc6c919408}\label{group__model_ga4c34dd228889f35273bd7adc6c919408}} 
+\index{Model@{Model}!TIMER15\_SPRITE@{TIMER15\_SPRITE}}
+\index{TIMER15\_SPRITE@{TIMER15\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{TIMER15\_SPRITE}{TIMER15\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ TIMER15\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga8fca7038fca835c40ced3332ee437277}\label{group__model_ga8fca7038fca835c40ced3332ee437277}} 
+\index{Model@{Model}!TIMER30\_SPRITE@{TIMER30\_SPRITE}}
+\index{TIMER30\_SPRITE@{TIMER30\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{TIMER30\_SPRITE}{TIMER30\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ TIMER30\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga14201c217dc1fd611dc21a476840f994}\label{group__model_ga14201c217dc1fd611dc21a476840f994}} 
+\index{Model@{Model}!TIMER60\_SPRITE@{TIMER60\_SPRITE}}
+\index{TIMER60\_SPRITE@{TIMER60\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{TIMER60\_SPRITE}{TIMER60\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ TIMER60\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga5a542621d1c710ce9b10bce7b727c91f}\label{group__model_ga5a542621d1c710ce9b10bce7b727c91f}} 
+\index{Model@{Model}!TWO\_SPRITE@{TWO\_SPRITE}}
+\index{TWO\_SPRITE@{TWO\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{TWO\_SPRITE}{TWO\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ TWO\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga63c01cf87898a643c956a944268ea9c8}\label{group__model_ga63c01cf87898a643c956a944268ea9c8}} 
+\index{Model@{Model}!typedLetters@{typedLetters}}
+\index{typedLetters@{typedLetters}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{typedLetters}{typedLetters}}
+{\footnotesize\ttfamily int Statistics\+::typed\+Letters}
+
+\mbox{\Hypertarget{group__model_gae7303d249642c3c84003b2f74843f7b8}\label{group__model_gae7303d249642c3c84003b2f74843f7b8}} 
+\index{Model@{Model}!typedWords@{typedWords}}
+\index{typedWords@{typedWords}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{typedWords}{typedWords}}
+{\footnotesize\ttfamily int Statistics\+::typed\+Words}
+
+\mbox{\Hypertarget{group__model_ga57e5384168c96ef6713917ae8ed90748}\label{group__model_ga57e5384168c96ef6713917ae8ed90748}} 
+\index{Model@{Model}!U\_SPRITE@{U\_SPRITE}}
+\index{U\_SPRITE@{U\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{U\_SPRITE}{U\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ U\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga4dbf9ebf9704b2d1cd85cf0b0f60671e}\label{group__model_ga4dbf9ebf9704b2d1cd85cf0b0f60671e}} 
+\index{Model@{Model}!V\_SPRITE@{V\_SPRITE}}
+\index{V\_SPRITE@{V\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{V\_SPRITE}{V\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ V\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga9036b07f9f5c0414b98de07aaad4be08}\label{group__model_ga9036b07f9f5c0414b98de07aaad4be08}} 
+\index{Model@{Model}!W\_SPRITE@{W\_SPRITE}}
+\index{W\_SPRITE@{W\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{W\_SPRITE}{W\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ W\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga76486b78482d0ffcc078afe7cf23af96}\label{group__model_ga76486b78482d0ffcc078afe7cf23af96}} 
+\index{Model@{Model}!width@{width}}
+\index{width@{width}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Caret\+::width}
+
+\mbox{\Hypertarget{group__model_gae6acecb5a13f1010fe83a320c1c51a64}\label{group__model_gae6acecb5a13f1010fe83a320c1c51a64}} 
+\index{Model@{Model}!wordCount@{wordCount}}
+\index{wordCount@{wordCount}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{wordCount}{wordCount}}
+{\footnotesize\ttfamily int Typing\+Test\+::word\+Count}
+
+\mbox{\Hypertarget{group__model_gaa7a4fed92e1fde766b32c3a45e21f6c3}\label{group__model_gaa7a4fed92e1fde766b32c3a45e21f6c3}} 
+\index{Model@{Model}!words@{words}}
+\index{words@{words}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{words}{words}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structWord}{Word}}$\ast$ Typing\+Test\+::words}
+
+\mbox{\Hypertarget{group__model_ga9f1f2b237d7d8366ac94d5dbcb3d93e3}\label{group__model_ga9f1f2b237d7d8366ac94d5dbcb3d93e3}} 
+\index{Model@{Model}!wpm@{wpm}}
+\index{wpm@{wpm}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{wpm}{wpm}}
+{\footnotesize\ttfamily int High\+Score\+::wpm}
+
+\mbox{\Hypertarget{group__model_ga47487d5d8a9451453527fc6bf7a830cb}\label{group__model_ga47487d5d8a9451453527fc6bf7a830cb}} 
+\index{Model@{Model}!x@{x}}
+\index{x@{x}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{x}{x}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Caret\+::x}
+
+\mbox{\Hypertarget{group__model_ga4a83977229cf053476234ce30fe09e20}\label{group__model_ga4a83977229cf053476234ce30fe09e20}} 
+\index{Model@{Model}!x@{x}}
+\index{x@{x}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{x}{x}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Word\+::x}
+
+\mbox{\Hypertarget{group__model_ga217494c372c55d81680f7367187262a3}\label{group__model_ga217494c372c55d81680f7367187262a3}} 
+\index{Model@{Model}!X\_SPRITE@{X\_SPRITE}}
+\index{X\_SPRITE@{X\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{X\_SPRITE}{X\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ X\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_ga1f828e6d5f281d231fe03387530b5641}\label{group__model_ga1f828e6d5f281d231fe03387530b5641}} 
+\index{Model@{Model}!y@{y}}
+\index{y@{y}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{y}{y}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Caret\+::y}
+
+\mbox{\Hypertarget{group__model_gaaa705f6919249d0542ecd0d7d77c9dca}\label{group__model_gaaa705f6919249d0542ecd0d7d77c9dca}} 
+\index{Model@{Model}!y@{y}}
+\index{y@{y}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{y}{y}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Word\+::y}
+
+\mbox{\Hypertarget{group__model_ga77cd8f442850f329ddc5c7f1743183fa}\label{group__model_ga77cd8f442850f329ddc5c7f1743183fa}} 
+\index{Model@{Model}!Y\_SPRITE@{Y\_SPRITE}}
+\index{Y\_SPRITE@{Y\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Y\_SPRITE}{Y\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ Y\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gaa419361ae5d9bc973f1a06e3a887225a}\label{group__model_gaa419361ae5d9bc973f1a06e3a887225a}} 
+\index{Model@{Model}!Z\_SPRITE@{Z\_SPRITE}}
+\index{Z\_SPRITE@{Z\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Z\_SPRITE}{Z\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ Z\+\_\+\+SPRITE}
+
+\mbox{\Hypertarget{group__model_gae0663e3c8b15672fe4e3e5ae3a9faf4e}\label{group__model_gae0663e3c8b15672fe4e3e5ae3a9faf4e}} 
+\index{Model@{Model}!ZERO\_SPRITE@{ZERO\_SPRITE}}
+\index{ZERO\_SPRITE@{ZERO\_SPRITE}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{ZERO\_SPRITE}{ZERO\_SPRITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ ZERO\+\_\+\+SPRITE}
+

@@ -1,0 +1,6 @@
+<map id="destroy_sprite" name="destroy_sprite">
+<area shape="rect" id="node1" title="Destroys a sprite." alt="" coords="441,5,556,32"/>
+<area shape="rect" id="node2" href="$model_8h.html#a8fdbc6c7bfca3ef4a8800a3cdc19d932" title="Free the memory allocated for the sprites." alt="" coords="271,5,393,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a882067407682fbb5472b9ebaed581708" title=" " alt="" coords="176,5,223,32"/>
+<area shape="rect" id="node4" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,5,128,32"/>
+</map>

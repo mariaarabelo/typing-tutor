@@ -1,0 +1,12 @@
+<map id="handle_delete_key" name="handle_delete_key">
+<area shape="rect" id="node1" title="Goes back to the previous letter and resets the current letter status." alt="" coords="5,132,149,159"/>
+<area shape="rect" id="node2" href="$group__view.html#gadc5e6cc78a16311829dc821e0a85030b" title="Draws the game words on the screen." alt="" coords="197,132,292,159"/>
+<area shape="rect" id="node3" href="$group__model.html#ga884f66aebb13ef5e5e37ed3247d493e6" title="Gets a key based on a char." alt="" coords="373,5,473,32"/>
+<area shape="rect" id="node4" href="$group__view.html#ga7388950ca6c61b844a290aae1772c4d7" title="Deletes the caret from the screen." alt="" coords="374,56,473,83"/>
+<area shape="rect" id="node6" href="$group__view.html#ga496b9cab89bb6d057ef7afc03774131b" title="Draws the caret on the screen." alt="" coords="379,107,468,133"/>
+<area shape="rect" id="node7" href="$group__view.html#ga9b73646129cbf750cc3c170aabe2ca6e" title="Draws a sprite on the screen, secondary_frame_buffer_no_mouse." alt="" coords="363,157,484,184"/>
+<area shape="rect" id="node9" href="$group__model.html#gac32ae0a5328c6612261ec59de33d922e" title="Resets offset to starting of box." alt="" coords="374,208,473,235"/>
+<area shape="rect" id="node10" href="$group__view.html#ga40d5f2662419bcb429d6d930916ad211" title="Calculates the length of a word in pixels." alt="" coords="340,259,507,285"/>
+<area shape="rect" id="node5" href="$group__video.html#ga985c2ca86c8f87d6dbc5956e34f45faa" title=" " alt="" coords="555,81,677,108"/>
+<area shape="rect" id="node8" href="$group__video.html#ga950e17209d152e8a40ec064a0b201b25" title=" " alt="" coords="570,157,662,184"/>
+</map>

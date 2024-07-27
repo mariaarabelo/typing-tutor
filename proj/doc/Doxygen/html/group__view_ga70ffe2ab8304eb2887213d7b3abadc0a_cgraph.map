@@ -1,0 +1,5 @@
+<map id="drawBackground" name="drawBackground">
+<area shape="rect" id="node1" title="Draws the background of the game." alt="" coords="5,31,136,57"/>
+<area shape="rect" id="node2" href="$group__video.html#ga985c2ca86c8f87d6dbc5956e34f45faa" title=" " alt="" coords="184,5,307,32"/>
+<area shape="rect" id="node3" href="$group__rtc.html#ga13b766098356ee1c32b4348a999ca4b4" title=" " alt="" coords="189,56,301,83"/>
+</map>

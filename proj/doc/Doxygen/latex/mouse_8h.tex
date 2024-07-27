@@ -1,0 +1,57 @@
+\hypertarget{mouse_8h}{}\doxysection{drivers/mouse/mouse.h File Reference}
+\label{mouse_8h}\index{drivers/mouse/mouse.h@{drivers/mouse/mouse.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for mouse.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__mouse_gadc6e5733fc3c22f0a7b2914188c49c90}{state}} \{ \newline
+\mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a0a7b6ed3dc3554a6b459f20fa24f834e}{STATE\+\_\+\+ZERO}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a98d2a2153b4ae0445fa0b114d65b94d9}{STATE\+\_\+\+INIT}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90af342921474d1d5042f68703890f98293}{STATE\+\_\+\+FIRST\+\_\+\+LINE}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a16103e7c06dd2cd42c81fd650e04452d}{STATE\+\_\+\+END\+\_\+\+FIRST\+\_\+\+LINE}}
+, \newline
+\mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a1b4fc3fbe342fa435801bb7039baefc5}{STATE\+\_\+\+VERTEX}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a6bd7e5c8273e89d95c2e448d7df18fb0}{STATE\+\_\+\+SECOND\+\_\+\+LINE}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90a5823db0533d5d6602be7f087f451b53a}{STATE\+\_\+\+END\+\_\+\+SECOND\+\_\+\+LINE}}
+, \mbox{\hyperlink{group__mouse_ggadc6e5733fc3c22f0a7b2914188c49c90af3f9f84c5967b769ca17cdc6c523f7fe}{STATE\+\_\+\+END}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga08895a8a691590216c1e72bbf1b2d333}{mouse\+\_\+subscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga005359c6b203ad4ffb84b4835642881c}{mouse\+\_\+enable\+\_\+data\+\_\+reporting}} (void)
+\begin{DoxyCompactList}\small\item\em Enables stream mode mouse data reporting. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_gaed4404005e4c565ac36656307386e0ac}{mouse\+\_\+ih}} (void)
+\begin{DoxyCompactList}\small\item\em Handles mouse interrupts. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_gaa82b5a98d8eeaa9cdaba9d1d2041e3de}{parse}} (void)
+\begin{DoxyCompactList}\small\item\em Parse packet. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_gadfdcc6cebe1d49b18f13158fe953d954}{sync}} (void)
+\begin{DoxyCompactList}\small\item\em sync packet \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga5537331c50aea7130b79f16facdbac00}{mouse\+\_\+command}} (uint32\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Sends a command to the mouse. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga13e2acbab096b08d81273fc98cb02795}{obf\+\_\+full}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the output buffer is full. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga0065111d4f2e30c82dc5b332f6f50825}{ibf\+\_\+empty}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the input buffer is empty. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga9b2c46546887d9d1b1cd533d2d7d6f7f}{process\+\_\+packet}} (struct packet $\ast$\mbox{\hyperlink{model_8c_a26e83eca70c2b9169fbbb0eac7e32e32}{pp}}, uint8\+\_\+t x\+\_\+len, uint8\+\_\+t tolerance)
+\begin{DoxyCompactList}\small\item\em Process state based on the packet. \end{DoxyCompactList}\end{DoxyCompactItemize}

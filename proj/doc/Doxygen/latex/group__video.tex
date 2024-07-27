@@ -1,0 +1,120 @@
+\hypertarget{group__video}{}\doxysection{Video}
+\label{group__video}\index{Video@{Video}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__video_ga967432a6c8128a907b937b0f3f4b4472}{set\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t submode)
+\item 
+int() \mbox{\hyperlink{group__video_ga55bb0148c696baca125c2c03bd585ae5}{set\+\_\+frame\+\_\+buffer}} (uint16\+\_\+t mode)
+\item 
+int() \mbox{\hyperlink{group__video_ga950e17209d152e8a40ec064a0b201b25}{draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\item 
+int() \mbox{\hyperlink{group__video_gaaa521edac9abebe26567c6421b0480ab}{draw\+\_\+line}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\item 
+int() \mbox{\hyperlink{group__video_ga985c2ca86c8f87d6dbc5956e34f45faa}{draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{group__video_ga9fcc2243068f8e628648febc0909c509}{mode\+\_\+info}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{group__video_ga9c4d5f857a98e5753d9a1b65a5b237e8}{main\+\_\+frame\+\_\+buffer}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{group__video_gaa0b878733cd01083e20d9c85310285b7}{secondary\+\_\+frame\+\_\+buffer}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{group__video_ga81d4895cbb580af463bd443e5a75ce54}{secondary\+\_\+frame\+\_\+buffer\+\_\+no\+\_\+mouse}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the video card 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__video_gaaa521edac9abebe26567c6421b0480ab}\label{group__video_gaaa521edac9abebe26567c6421b0480ab}} 
+\index{Video@{Video}!draw\_line@{draw\_line}}
+\index{draw\_line@{draw\_line}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{draw\_line()}{draw\_line()}}
+{\footnotesize\ttfamily int() draw\+\_\+line (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t $\ast$}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__video_ga950e17209d152e8a40ec064a0b201b25}\label{group__video_ga950e17209d152e8a40ec064a0b201b25}} 
+\index{Video@{Video}!draw\_pixel@{draw\_pixel}}
+\index{draw\_pixel@{draw\_pixel}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{draw\_pixel()}{draw\_pixel()}}
+{\footnotesize\ttfamily int() draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t $\ast$}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__video_ga950e17209d152e8a40ec064a0b201b25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video_ga985c2ca86c8f87d6dbc5956e34f45faa}\label{group__video_ga985c2ca86c8f87d6dbc5956e34f45faa}} 
+\index{Video@{Video}!draw\_rectangle@{draw\_rectangle}}
+\index{draw\_rectangle@{draw\_rectangle}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{draw\_rectangle()}{draw\_rectangle()}}
+{\footnotesize\ttfamily int() draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t $\ast$}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__video_ga985c2ca86c8f87d6dbc5956e34f45faa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video_ga55bb0148c696baca125c2c03bd585ae5}\label{group__video_ga55bb0148c696baca125c2c03bd585ae5}} 
+\index{Video@{Video}!set\_frame\_buffer@{set\_frame\_buffer}}
+\index{set\_frame\_buffer@{set\_frame\_buffer}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{set\_frame\_buffer()}{set\_frame\_buffer()}}
+{\footnotesize\ttfamily int() set\+\_\+frame\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__video_ga55bb0148c696baca125c2c03bd585ae5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video_ga967432a6c8128a907b937b0f3f4b4472}\label{group__video_ga967432a6c8128a907b937b0f3f4b4472}} 
+\index{Video@{Video}!set\_graphic\_mode@{set\_graphic\_mode}}
+\index{set\_graphic\_mode@{set\_graphic\_mode}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{set\_graphic\_mode()}{set\_graphic\_mode()}}
+{\footnotesize\ttfamily int() set\+\_\+graphic\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{submode }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__video_ga967432a6c8128a907b937b0f3f4b4472_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__video_ga9c4d5f857a98e5753d9a1b65a5b237e8}\label{group__video_ga9c4d5f857a98e5753d9a1b65a5b237e8}} 
+\index{Video@{Video}!main\_frame\_buffer@{main\_frame\_buffer}}
+\index{main\_frame\_buffer@{main\_frame\_buffer}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{main\_frame\_buffer}{main\_frame\_buffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ main\+\_\+frame\+\_\+buffer}
+
+\mbox{\Hypertarget{group__video_ga9fcc2243068f8e628648febc0909c509}\label{group__video_ga9fcc2243068f8e628648febc0909c509}} 
+\index{Video@{Video}!mode\_info@{mode\_info}}
+\index{mode\_info@{mode\_info}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{mode\_info}{mode\_info}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t mode\+\_\+info}
+
+\mbox{\Hypertarget{group__video_gaa0b878733cd01083e20d9c85310285b7}\label{group__video_gaa0b878733cd01083e20d9c85310285b7}} 
+\index{Video@{Video}!secondary\_frame\_buffer@{secondary\_frame\_buffer}}
+\index{secondary\_frame\_buffer@{secondary\_frame\_buffer}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{secondary\_frame\_buffer}{secondary\_frame\_buffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ secondary\+\_\+frame\+\_\+buffer}
+
+\mbox{\Hypertarget{group__video_ga81d4895cbb580af463bd443e5a75ce54}\label{group__video_ga81d4895cbb580af463bd443e5a75ce54}} 
+\index{Video@{Video}!secondary\_frame\_buffer\_no\_mouse@{secondary\_frame\_buffer\_no\_mouse}}
+\index{secondary\_frame\_buffer\_no\_mouse@{secondary\_frame\_buffer\_no\_mouse}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{secondary\_frame\_buffer\_no\_mouse}{secondary\_frame\_buffer\_no\_mouse}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ secondary\+\_\+frame\+\_\+buffer\+\_\+no\+\_\+mouse}
+

@@ -1,0 +1,234 @@
+\hypertarget{group__rtc}{}\doxysection{Rtc}
+\label{group__rtc}\index{Rtc@{Rtc}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtc_gab54f2d18b47b47a59f718e16099446e8}{RTC\+\_\+\+MASK}}~5
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga910ac5f2c1b4016e433f9832358a1816}{IRQ\+\_\+\+RTC}}~8
+\item 
+\#define \mbox{\hyperlink{group__rtc_gac7ccdd8e98d8f7fdad8dfe99c467d5d8}{REGISTER\+\_\+\+INPUT}}~0x70
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga5e3f3a35c56673c2a54d9f4eadb759a9}{REGISTER\+\_\+\+OUTPUT}}~0x71
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga79c0bb250ad248af29b370b20dd1fb29}{REGISTER\+\_\+\+UPDATING}}~10
+\item 
+\#define \mbox{\hyperlink{group__rtc_gac261047d18c2505db97b38b7b157f1fd}{REGISTER\+\_\+\+COUNTING}}~11
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga48fcf4f2eeef6769d588168d4ac2ab0e}{SECONDS}}~0
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga84be9dcfa5a172ee83121620d15c8e29}{MINUTES}}~2
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga212d0f839f6f7ca43ccde311f93d5892}{HOURS}}~4
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga509a01c55cbe47386fe24602b7c7fda1}{DAY}}~7
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga3729d06495d9713592f79f3122c9e677}{MONTH}}~8
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga5871356500f559add06ea81d60331b1b}{YEAR}}~9
+\item 
+\#define \mbox{\hyperlink{group__rtc_gacc166508d5cfbf4100f8622ce97f4985}{BINARY}}~BIT(2)
+\item 
+\#define \mbox{\hyperlink{group__rtc_gae07bc1582ec2a0d53dd74350b5a19c5e}{UPDATING}}~BIT(7)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__rtc_gabb90a7b2307300874b2529d94aafacca}{rtc\+\_\+subscribe\+\_\+interrupts}} ()
+\item 
+int \mbox{\hyperlink{group__rtc_gae0e5cb47db8832528abb7dc48255cd3a}{rtc\+\_\+unsubscribe\+\_\+interrupts}} ()
+\item 
+int \mbox{\hyperlink{group__rtc_ga13b766098356ee1c32b4348a999ca4b4}{rtc\+\_\+read\+\_\+time}} (\mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}} $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__rtc_gafc03bc22049a9d9e160e95ac936aefdf}{real\+\_\+time\+\_\+info\+::year}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__rtc_ga48abc773854bf4b4dc44631ed41276eb}{real\+\_\+time\+\_\+info\+::month}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__rtc_gafabb3b4eb490f068cdddf3c39253ca86}{real\+\_\+time\+\_\+info\+::day}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__rtc_ga83e0cec7c44cbc9a4295499a4698b12d}{real\+\_\+time\+\_\+info\+::hours}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__rtc_gade04d7665aff63ff7c1cfa06e00139cb}{real\+\_\+time\+\_\+info\+::minutes}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__rtc_ga508e97fcf1bfdcb43c196ce70ae910d5}{real\+\_\+time\+\_\+info\+::seconds}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the RTC 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__rtc_gacc166508d5cfbf4100f8622ce97f4985}\label{group__rtc_gacc166508d5cfbf4100f8622ce97f4985}} 
+\index{Rtc@{Rtc}!BINARY@{BINARY}}
+\index{BINARY@{BINARY}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{BINARY}{BINARY}}
+{\footnotesize\ttfamily \#define BINARY~BIT(2)}
+
+\mbox{\Hypertarget{group__rtc_ga509a01c55cbe47386fe24602b7c7fda1}\label{group__rtc_ga509a01c55cbe47386fe24602b7c7fda1}} 
+\index{Rtc@{Rtc}!DAY@{DAY}}
+\index{DAY@{DAY}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{DAY}{DAY}}
+{\footnotesize\ttfamily \#define DAY~7}
+
+\mbox{\Hypertarget{group__rtc_ga212d0f839f6f7ca43ccde311f93d5892}\label{group__rtc_ga212d0f839f6f7ca43ccde311f93d5892}} 
+\index{Rtc@{Rtc}!HOURS@{HOURS}}
+\index{HOURS@{HOURS}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{HOURS}{HOURS}}
+{\footnotesize\ttfamily \#define HOURS~4}
+
+\mbox{\Hypertarget{group__rtc_ga910ac5f2c1b4016e433f9832358a1816}\label{group__rtc_ga910ac5f2c1b4016e433f9832358a1816}} 
+\index{Rtc@{Rtc}!IRQ\_RTC@{IRQ\_RTC}}
+\index{IRQ\_RTC@{IRQ\_RTC}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{IRQ\_RTC}{IRQ\_RTC}}
+{\footnotesize\ttfamily \#define IRQ\+\_\+\+RTC~8}
+
+\mbox{\Hypertarget{group__rtc_ga84be9dcfa5a172ee83121620d15c8e29}\label{group__rtc_ga84be9dcfa5a172ee83121620d15c8e29}} 
+\index{Rtc@{Rtc}!MINUTES@{MINUTES}}
+\index{MINUTES@{MINUTES}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{MINUTES}{MINUTES}}
+{\footnotesize\ttfamily \#define MINUTES~2}
+
+\mbox{\Hypertarget{group__rtc_ga3729d06495d9713592f79f3122c9e677}\label{group__rtc_ga3729d06495d9713592f79f3122c9e677}} 
+\index{Rtc@{Rtc}!MONTH@{MONTH}}
+\index{MONTH@{MONTH}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{MONTH}{MONTH}}
+{\footnotesize\ttfamily \#define MONTH~8}
+
+\mbox{\Hypertarget{group__rtc_gac261047d18c2505db97b38b7b157f1fd}\label{group__rtc_gac261047d18c2505db97b38b7b157f1fd}} 
+\index{Rtc@{Rtc}!REGISTER\_COUNTING@{REGISTER\_COUNTING}}
+\index{REGISTER\_COUNTING@{REGISTER\_COUNTING}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_COUNTING}{REGISTER\_COUNTING}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+\+COUNTING~11}
+
+\mbox{\Hypertarget{group__rtc_gac7ccdd8e98d8f7fdad8dfe99c467d5d8}\label{group__rtc_gac7ccdd8e98d8f7fdad8dfe99c467d5d8}} 
+\index{Rtc@{Rtc}!REGISTER\_INPUT@{REGISTER\_INPUT}}
+\index{REGISTER\_INPUT@{REGISTER\_INPUT}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_INPUT}{REGISTER\_INPUT}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+\+INPUT~0x70}
+
+\mbox{\Hypertarget{group__rtc_ga5e3f3a35c56673c2a54d9f4eadb759a9}\label{group__rtc_ga5e3f3a35c56673c2a54d9f4eadb759a9}} 
+\index{Rtc@{Rtc}!REGISTER\_OUTPUT@{REGISTER\_OUTPUT}}
+\index{REGISTER\_OUTPUT@{REGISTER\_OUTPUT}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_OUTPUT}{REGISTER\_OUTPUT}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+\+OUTPUT~0x71}
+
+\mbox{\Hypertarget{group__rtc_ga79c0bb250ad248af29b370b20dd1fb29}\label{group__rtc_ga79c0bb250ad248af29b370b20dd1fb29}} 
+\index{Rtc@{Rtc}!REGISTER\_UPDATING@{REGISTER\_UPDATING}}
+\index{REGISTER\_UPDATING@{REGISTER\_UPDATING}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_UPDATING}{REGISTER\_UPDATING}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+\+UPDATING~10}
+
+\mbox{\Hypertarget{group__rtc_gab54f2d18b47b47a59f718e16099446e8}\label{group__rtc_gab54f2d18b47b47a59f718e16099446e8}} 
+\index{Rtc@{Rtc}!RTC\_MASK@{RTC\_MASK}}
+\index{RTC\_MASK@{RTC\_MASK}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{RTC\_MASK}{RTC\_MASK}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+MASK~5}
+
+\mbox{\Hypertarget{group__rtc_ga48fcf4f2eeef6769d588168d4ac2ab0e}\label{group__rtc_ga48fcf4f2eeef6769d588168d4ac2ab0e}} 
+\index{Rtc@{Rtc}!SECONDS@{SECONDS}}
+\index{SECONDS@{SECONDS}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{SECONDS}{SECONDS}}
+{\footnotesize\ttfamily \#define SECONDS~0}
+
+\mbox{\Hypertarget{group__rtc_gae07bc1582ec2a0d53dd74350b5a19c5e}\label{group__rtc_gae07bc1582ec2a0d53dd74350b5a19c5e}} 
+\index{Rtc@{Rtc}!UPDATING@{UPDATING}}
+\index{UPDATING@{UPDATING}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{UPDATING}{UPDATING}}
+{\footnotesize\ttfamily \#define UPDATING~BIT(7)}
+
+\mbox{\Hypertarget{group__rtc_ga5871356500f559add06ea81d60331b1b}\label{group__rtc_ga5871356500f559add06ea81d60331b1b}} 
+\index{Rtc@{Rtc}!YEAR@{YEAR}}
+\index{YEAR@{YEAR}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{YEAR}{YEAR}}
+{\footnotesize\ttfamily \#define YEAR~9}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtc_ga13b766098356ee1c32b4348a999ca4b4}\label{group__rtc_ga13b766098356ee1c32b4348a999ca4b4}} 
+\index{Rtc@{Rtc}!rtc\_read\_time@{rtc\_read\_time}}
+\index{rtc\_read\_time@{rtc\_read\_time}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{rtc\_read\_time()}{rtc\_read\_time()}}
+{\footnotesize\ttfamily int rtc\+\_\+read\+\_\+time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_ga13b766098356ee1c32b4348a999ca4b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_gabb90a7b2307300874b2529d94aafacca}\label{group__rtc_gabb90a7b2307300874b2529d94aafacca}} 
+\index{Rtc@{Rtc}!rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}}
+\index{rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_interrupts()}{rtc\_subscribe\_interrupts()}}
+{\footnotesize\ttfamily int rtc\+\_\+subscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_gabb90a7b2307300874b2529d94aafacca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_gae0e5cb47db8832528abb7dc48255cd3a}\label{group__rtc_gae0e5cb47db8832528abb7dc48255cd3a}} 
+\index{Rtc@{Rtc}!rtc\_unsubscribe\_interrupts@{rtc\_unsubscribe\_interrupts}}
+\index{rtc\_unsubscribe\_interrupts@{rtc\_unsubscribe\_interrupts}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_interrupts()}{rtc\_unsubscribe\_interrupts()}}
+{\footnotesize\ttfamily int rtc\+\_\+unsubscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_gae0e5cb47db8832528abb7dc48255cd3a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__rtc_gafabb3b4eb490f068cdddf3c39253ca86}\label{group__rtc_gafabb3b4eb490f068cdddf3c39253ca86}} 
+\index{Rtc@{Rtc}!day@{day}}
+\index{day@{day}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily uint8\+\_\+t real\+\_\+time\+\_\+info\+::day}
+
+\mbox{\Hypertarget{group__rtc_ga83e0cec7c44cbc9a4295499a4698b12d}\label{group__rtc_ga83e0cec7c44cbc9a4295499a4698b12d}} 
+\index{Rtc@{Rtc}!hours@{hours}}
+\index{hours@{hours}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{hours}{hours}}
+{\footnotesize\ttfamily uint8\+\_\+t real\+\_\+time\+\_\+info\+::hours}
+
+\mbox{\Hypertarget{group__rtc_gade04d7665aff63ff7c1cfa06e00139cb}\label{group__rtc_gade04d7665aff63ff7c1cfa06e00139cb}} 
+\index{Rtc@{Rtc}!minutes@{minutes}}
+\index{minutes@{minutes}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{minutes}{minutes}}
+{\footnotesize\ttfamily uint8\+\_\+t real\+\_\+time\+\_\+info\+::minutes}
+
+\mbox{\Hypertarget{group__rtc_ga48abc773854bf4b4dc44631ed41276eb}\label{group__rtc_ga48abc773854bf4b4dc44631ed41276eb}} 
+\index{Rtc@{Rtc}!month@{month}}
+\index{month@{month}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily uint8\+\_\+t real\+\_\+time\+\_\+info\+::month}
+
+\mbox{\Hypertarget{group__rtc_ga508e97fcf1bfdcb43c196ce70ae910d5}\label{group__rtc_ga508e97fcf1bfdcb43c196ce70ae910d5}} 
+\index{Rtc@{Rtc}!seconds@{seconds}}
+\index{seconds@{seconds}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{seconds}{seconds}}
+{\footnotesize\ttfamily uint8\+\_\+t real\+\_\+time\+\_\+info\+::seconds}
+
+\mbox{\Hypertarget{group__rtc_gafc03bc22049a9d9e160e95ac936aefdf}\label{group__rtc_gafc03bc22049a9d9e160e95ac936aefdf}} 
+\index{Rtc@{Rtc}!year@{year}}
+\index{year@{year}!Rtc@{Rtc}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily uint8\+\_\+t real\+\_\+time\+\_\+info\+::year}
+

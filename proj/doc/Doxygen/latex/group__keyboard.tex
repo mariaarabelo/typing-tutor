@@ -1,0 +1,107 @@
+\hypertarget{group__keyboard}{}\doxysection{Keyboard}
+\label{group__keyboard}\index{Keyboard@{Keyboard}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__keyboard_gaa23b07fa2192ce772fe143de1bc99695}{keyboard\+\_\+subscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}{keyboard\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes interrupts. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__keyboard_gaea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Interrupt handler. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_gaca6a38246d9a7df97dbdd68004a41842}{kbc\+\_\+activate\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em reactivates the interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga1e39b93b164897ba27ae698a90ede53f}{kbc\+\_\+polling}} ()
+\begin{DoxyCompactList}\small\item\em Polls the KBC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the i8042 KBC 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__keyboard_gaca6a38246d9a7df97dbdd68004a41842}\label{group__keyboard_gaca6a38246d9a7df97dbdd68004a41842}} 
+\index{Keyboard@{Keyboard}!kbc\_activate\_interrupts@{kbc\_activate\_interrupts}}
+\index{kbc\_activate\_interrupts@{kbc\_activate\_interrupts}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{kbc\_activate\_interrupts()}{kbc\_activate\_interrupts()}}
+{\footnotesize\ttfamily int() kbc\+\_\+activate\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reactivates the interrupts 
+
+\mbox{\Hypertarget{group__keyboard_gaea970a154161a35f6894898a092ed70a}\label{group__keyboard_gaea970a154161a35f6894898a092ed70a}} 
+\index{Keyboard@{Keyboard}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily void() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Interrupt handler. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_gaea970a154161a35f6894898a092ed70a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_ga1e39b93b164897ba27ae698a90ede53f}\label{group__keyboard_ga1e39b93b164897ba27ae698a90ede53f}} 
+\index{Keyboard@{Keyboard}!kbc\_polling@{kbc\_polling}}
+\index{kbc\_polling@{kbc\_polling}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{kbc\_polling()}{kbc\_polling()}}
+{\footnotesize\ttfamily int() kbc\+\_\+polling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Polls the KBC. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__keyboard_gaa23b07fa2192ce772fe143de1bc99695}\label{group__keyboard_gaa23b07fa2192ce772fe143de1bc99695}} 
+\index{Keyboard@{Keyboard}!keyboard\_subscribe\_int@{keyboard\_subscribe\_int}}
+\index{keyboard\_subscribe\_int@{keyboard\_subscribe\_int}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{keyboard\_subscribe\_int()}{keyboard\_subscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_gaa23b07fa2192ce772fe143de1bc99695_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}\label{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}} 
+\index{Keyboard@{Keyboard}!keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}}
+\index{keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{keyboard\_unsubscribe\_int()}{keyboard\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed_icgraph}
+\end{center}
+\end{figure}

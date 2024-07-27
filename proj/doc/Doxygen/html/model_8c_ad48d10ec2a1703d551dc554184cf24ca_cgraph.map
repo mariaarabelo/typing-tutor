@@ -1,0 +1,12 @@
+<map id="fill_current_word" name="fill_current_word">
+<area shape="rect" id="node1" title="Fills correctly the remaining letters of the current word." alt="" coords="5,132,136,159"/>
+<area shape="rect" id="node2" href="$view_8h.html#adc5e6cc78a16311829dc821e0a85030b" title="Draws the game words on the screen." alt="" coords="184,132,279,159"/>
+<area shape="rect" id="node3" href="$model_8h.html#a884f66aebb13ef5e5e37ed3247d493e6" title="Gets a key based on a char." alt="" coords="360,5,460,32"/>
+<area shape="rect" id="node4" href="$view_8c.html#a7388950ca6c61b844a290aae1772c4d7" title="Deletes the caret from the screen." alt="" coords="361,56,459,83"/>
+<area shape="rect" id="node6" href="$view_8c.html#a496b9cab89bb6d057ef7afc03774131b" title="Draws the caret on the screen." alt="" coords="365,107,455,133"/>
+<area shape="rect" id="node7" href="$view_8c.html#a9b73646129cbf750cc3c170aabe2ca6e" title="Draws a sprite on the screen, secondary_frame_buffer_no_mouse." alt="" coords="349,157,471,184"/>
+<area shape="rect" id="node9" href="$model_8h.html#ac32ae0a5328c6612261ec59de33d922e" title="Resets offset to starting of box." alt="" coords="361,208,459,235"/>
+<area shape="rect" id="node10" href="$view_8c.html#a40d5f2662419bcb429d6d930916ad211" title="Calculates the length of a word in pixels." alt="" coords="327,259,493,285"/>
+<area shape="rect" id="node5" href="$group__video.html#ga985c2ca86c8f87d6dbc5956e34f45faa" title=" " alt="" coords="541,81,664,108"/>
+<area shape="rect" id="node8" href="$group__video.html#ga950e17209d152e8a40ec064a0b201b25" title=" " alt="" coords="557,157,649,184"/>
+</map>

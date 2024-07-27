@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['r_219',['R',['../group__model.html#ggab3c7af4820830f9166ede9e5623c4e73a1784b1a3d7cbd43c45ff82c72d05e4ae',1,'model.h']]],
+  ['r_5fsprite_220',['R_SPRITE',['../group__model.html#ga0daa33e78bc92dd25e6bbcbba8c04230',1,'model.h']]],
+  ['real_5ftime_5finfo_221',['real_time_info',['../structreal__time__info.html',1,'']]],
+  ['register_5fcounting_222',['REGISTER_COUNTING',['../group__rtc.html#gac261047d18c2505db97b38b7b157f1fd',1,'rtc.h']]],
+  ['register_5finput_223',['REGISTER_INPUT',['../group__rtc.html#gac7ccdd8e98d8f7fdad8dfe99c467d5d8',1,'rtc.h']]],
+  ['register_5foutput_224',['REGISTER_OUTPUT',['../group__rtc.html#ga5e3f3a35c56673c2a54d9f4eadb759a9',1,'rtc.h']]],
+  ['register_5fupdating_225',['REGISTER_UPDATING',['../group__rtc.html#ga79c0bb250ad248af29b370b20dd1fb29',1,'rtc.h']]],
+  ['reset_5foffset_226',['reset_offset',['../group__model.html#gac32ae0a5328c6612261ec59de33d922e',1,'reset_offset():&#160;model.c'],['../group__model.html#gac32ae0a5328c6612261ec59de33d922e',1,'reset_offset():&#160;model.c']]],
+  ['right_5fparenthesis_227',['RIGHT_PARENTHESIS',['../group__model.html#ggab3c7af4820830f9166ede9e5623c4e73a6069687c1576cf9757e02f44e9060ed2',1,'model.h']]],
+  ['right_5fparenthesis_5fsprite_228',['RIGHT_PARENTHESIS_SPRITE',['../group__model.html#ga4c21d981ef841b43cb0e716aca2b0715',1,'model.h']]],
+  ['rtc_229',['Rtc',['../group__rtc.html',1,'']]],
+  ['rtc_2eh_230',['rtc.h',['../rtc_8h.html',1,'']]],
+  ['rtc_5fmask_231',['RTC_MASK',['../group__rtc.html#gab54f2d18b47b47a59f718e16099446e8',1,'rtc.h']]],
+  ['rtc_5fread_5ftime_232',['rtc_read_time',['../group__rtc.html#ga13b766098356ee1c32b4348a999ca4b4',1,'rtc.h']]],
+  ['rtc_5fsubscribe_5finterrupts_233',['rtc_subscribe_interrupts',['../group__rtc.html#gabb90a7b2307300874b2529d94aafacca',1,'rtc.h']]],
+  ['rtc_5funsubscribe_5finterrupts_234',['rtc_unsubscribe_interrupts',['../group__rtc.html#gae0e5cb47db8832528abb7dc48255cd3a',1,'rtc.h']]],
+  ['running_235',['RUNNING',['../group__model.html#gga736a770455f42dc69910e2687d533b55a1061be6c3fb88d32829cba6f6b2be304',1,'model.h']]]
+];

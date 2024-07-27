@@ -1,0 +1,6 @@
+<map id="drawStatic" name="drawStatic">
+<area shape="rect" id="node1" title="Draws a static sprite on the screen." alt="" coords="507,31,597,57"/>
+<area shape="rect" id="node2" href="$view_8h.html#a1049e182be24f131adcb60be02ba8b6f" title=" " alt="" coords="332,5,459,32"/>
+<area shape="rect" id="node3" href="$view_8h.html#a19bb29bb8a74e2d753e25894de6051bd" title="Distributes the drawing of the game depending on the current state." alt="" coords="176,31,284,57"/>
+<area shape="rect" id="node4" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,31,128,57"/>
+</map>

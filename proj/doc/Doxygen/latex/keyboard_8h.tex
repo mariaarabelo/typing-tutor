@@ -1,0 +1,34 @@
+\hypertarget{keyboard_8h}{}\doxysection{drivers/keyboard/keyboard.h File Reference}
+\label{keyboard_8h}\index{drivers/keyboard/keyboard.h@{drivers/keyboard/keyboard.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for keyboard.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__keyboard_gaa23b07fa2192ce772fe143de1bc99695}{keyboard\+\_\+subscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}{keyboard\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes interrupts. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__keyboard_gaea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Interrupt handler. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_gaca6a38246d9a7df97dbdd68004a41842}{kbc\+\_\+activate\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em reactivates the interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga1e39b93b164897ba27ae698a90ede53f}{kbc\+\_\+polling}} ()
+\begin{DoxyCompactList}\small\item\em Polls the KBC. \end{DoxyCompactList}\end{DoxyCompactItemize}

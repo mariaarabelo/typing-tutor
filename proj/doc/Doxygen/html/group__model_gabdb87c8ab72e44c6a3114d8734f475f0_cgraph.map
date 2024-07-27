@@ -1,0 +1,17 @@
+<map id="handle_space_key" name="handle_space_key">
+<area shape="rect" id="node1" title="Checks if the current word is correct and advances to the next word, also updates the statistics." alt="" coords="5,309,147,336"/>
+<area shape="rect" id="node2" href="$group__view.html#gadc5e6cc78a16311829dc821e0a85030b" title="Draws the game words on the screen." alt="" coords="207,157,301,184"/>
+<area shape="rect" id="node11" href="$group__model.html#ga6fd340363e321476815273c4bb17b211" title="Moves the penultimate line to first line, last line to second and loads new words." alt="" coords="195,309,313,336"/>
+<area shape="rect" id="node15" href="$group__model.html#gae1e1127622ac454d7afeb895dd1a2bb6" title="Starts the animation." alt="" coords="195,360,313,387"/>
+<area shape="rect" id="node3" href="$group__model.html#ga884f66aebb13ef5e5e37ed3247d493e6" title="Gets a key based on a char." alt="" coords="395,208,495,235"/>
+<area shape="rect" id="node4" href="$group__view.html#ga7388950ca6c61b844a290aae1772c4d7" title="Deletes the caret from the screen." alt="" coords="395,259,494,285"/>
+<area shape="rect" id="node6" href="$group__view.html#ga496b9cab89bb6d057ef7afc03774131b" title="Draws the caret on the screen." alt="" coords="400,56,489,83"/>
+<area shape="rect" id="node7" href="$group__view.html#ga9b73646129cbf750cc3c170aabe2ca6e" title="Draws a sprite on the screen, secondary_frame_buffer_no_mouse." alt="" coords="384,5,505,32"/>
+<area shape="rect" id="node9" href="$group__model.html#gac32ae0a5328c6612261ec59de33d922e" title="Resets offset to starting of box." alt="" coords="395,107,494,133"/>
+<area shape="rect" id="node10" href="$group__view.html#ga40d5f2662419bcb429d6d930916ad211" title="Calculates the length of a word in pixels." alt="" coords="361,157,528,184"/>
+<area shape="rect" id="node5" href="$group__video.html#ga985c2ca86c8f87d6dbc5956e34f45faa" title=" " alt="" coords="576,259,699,285"/>
+<area shape="rect" id="node8" href="$group__video.html#ga950e17209d152e8a40ec064a0b201b25" title=" " alt="" coords="591,5,683,32"/>
+<area shape="rect" id="node12" href="$group__view.html#ga70ffe2ab8304eb2887213d7b3abadc0a" title="Draws the background of the game." alt="" coords="379,360,510,387"/>
+<area shape="rect" id="node14" href="$group__model.html#ga6909d155b4129f9628a90e2bca468276" title="Loads new words to the test." alt="" coords="383,309,506,336"/>
+<area shape="rect" id="node13" href="$group__rtc.html#ga13b766098356ee1c32b4348a999ca4b4" title=" " alt="" coords="581,360,693,387"/>
+</map>

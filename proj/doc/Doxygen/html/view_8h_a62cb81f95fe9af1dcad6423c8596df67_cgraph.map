@@ -1,0 +1,8 @@
+<map id="drawTimers" name="drawTimers">
+<area shape="rect" id="node1" title="Displays the timers xpms on the screen." alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$view_8c.html#a9b73646129cbf750cc3c170aabe2ca6e" title="Draws a sprite on the screen, secondary_frame_buffer_no_mouse." alt="" coords="281,5,403,32"/>
+<area shape="rect" id="node4" href="$view_8c.html#aebad560d35f86b4e398c824277f81105" title="Draws a text on the screen." alt="" coords="152,56,233,83"/>
+<area shape="rect" id="node3" href="$group__video.html#ga950e17209d152e8a40ec064a0b201b25" title=" " alt="" coords="451,5,543,32"/>
+<area shape="rect" id="node5" href="$model_8h.html#a884f66aebb13ef5e5e37ed3247d493e6" title="Gets a key based on a char." alt="" coords="292,56,392,83"/>
+<area shape="rect" id="node6" href="$model_8h.html#a2e5b5f1e5dd9806b0a18e19fccb7e850" title="Handles the offset for drawing." alt="" coords="285,107,399,133"/>
+</map>

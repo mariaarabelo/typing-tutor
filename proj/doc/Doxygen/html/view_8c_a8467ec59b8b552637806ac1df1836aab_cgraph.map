@@ -1,0 +1,5 @@
+<map id="drawStars" name="drawStars">
+<area shape="rect" id="node1" title="Draws the remaining stars on the screen." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" href="$view_8c.html#a9b73646129cbf750cc3c170aabe2ca6e" title="Draws a sprite on the screen, secondary_frame_buffer_no_mouse." alt="" coords="140,5,261,32"/>
+<area shape="rect" id="node3" href="$group__video.html#ga950e17209d152e8a40ec064a0b201b25" title=" " alt="" coords="309,5,401,32"/>
+</map>

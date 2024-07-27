@@ -1,0 +1,7 @@
+<map id="drawStatistics" name="drawStatistics">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,120,57"/>
+<area shape="rect" id="node2" href="$group__view.html#gab56e77c696fe2d638df42dbbd4219796" title=" " alt="" coords="168,31,239,57"/>
+<area shape="rect" id="node3" href="$group__model.html#ga884f66aebb13ef5e5e37ed3247d493e6" title="Gets a key based on a char." alt="" coords="297,5,397,32"/>
+<area shape="rect" id="node4" href="$group__view.html#ga9b73646129cbf750cc3c170aabe2ca6e" title="Draws a sprite on the screen, secondary_frame_buffer_no_mouse." alt="" coords="287,56,408,83"/>
+<area shape="rect" id="node5" href="$group__video.html#ga950e17209d152e8a40ec064a0b201b25" title=" " alt="" coords="456,56,548,83"/>
+</map>
